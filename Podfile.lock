@@ -1,0 +1,22 @@
+PODS:
+  - ChromaColorPicker (1.8.0)
+  - CocoaLumberjack/Core (3.5.3)
+  - CocoaLumberjack/Swift (3.5.3):
+    - CocoaLumberjack/Core
+
+DEPENDENCIES:
+  - ChromaColorPicker
+  - CocoaLumberjack/Swift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ChromaColorPicker
+    - CocoaLumberjack
+
+SPEC CHECKSUMS:
+  ChromaColorPicker: 2e47f5acb805d53350fb7af1b511bc534b38ee31
+  CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
+
+PODFILE CHECKSUM: 0f51e55df048e6c1c37726f223b8cbe30df0cd31
+
+COCOAPODS: 1.7.3
