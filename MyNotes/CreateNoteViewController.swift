@@ -11,13 +11,14 @@ import UIKit
 class CreateNoteViewController: UIViewController {
     @IBOutlet weak var titleText: UITextField!
     @IBOutlet weak var contentTextView: UITextView!
-    
-  
+    @IBOutlet weak var colorStackView: ColorStackUIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Create Note"
         prepareContentTextView()
+        colorStackView.delegate = self
+
         
      
         // Do any additional setup after loading the view.
@@ -73,5 +74,14 @@ extension CreateNoteViewController : UITextViewDelegate {
             constraint.constant = estimatedSize.height
         }
     }
+}
+
+
+extension CreateNoteViewController : ColorStackDelegate {
+    func onGradientColorClick() {
+        let colorPickerView = ColorPickerView(frame: view.safeAreaLayoutGuide.layoutFrame)
+        view.addSubview(colorPickerView)
+    }
+    
     
 }
