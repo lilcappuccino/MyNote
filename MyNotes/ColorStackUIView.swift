@@ -10,6 +10,8 @@ import UIKit
 
 public protocol ColorStackDelegate {
     func onGradientColorClick()
+    
+    func didSelectColor(color: UIColor?)
 }
 
 
@@ -55,8 +57,9 @@ class ColorStackUIView: UIView , UIGestureRecognizerDelegate{
             }
             colorList[index].layer.borderColor = UIColor.black.cgColor
             colorList[index].layer.borderWidth = 2
+            delegate?.didSelectColor(color: colorList[index].backgroundColor)
             if colorList[index] == colorList?.last {
-                delegate?.onGradientColorClick()
+//                delegate?.onGradientColorClick()
             }
         }
     }
@@ -71,9 +74,6 @@ class ColorStackUIView: UIView , UIGestureRecognizerDelegate{
         let colorPickerView = ColorPickerView(frame: self.safeAreaLayoutGuide.layoutFrame)
         
         addSubview(colorPickerView)
-//        colorPickerView.delegate = self
-//        colorPickerView.initialColor = selectedColor
-//        isColorPickerViewDisplaing = true
     }
     
     private func addGradient(){

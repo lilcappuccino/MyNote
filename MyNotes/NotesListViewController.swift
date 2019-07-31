@@ -8,40 +8,72 @@
 
 import UIKit
 
-class NotesListViewController: UIViewController {
+class NotesListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
+    @IBOutlet weak var tableView: UITableView!
     
-    let segueIndeficator = "CreateNote"
+    let sugueIndeficatorOpen = "OpenNote"
+    
+    private var clickedItemIndex : IndexPath?
+    
+    var notes = [Note]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-         print("viewDidLoad")
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(performSegueForCreateNote))
-    
-        self.navigationController?.title = "Notes"
-        self.navigationItem.title = "Notes"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(performSegueForCreateNote))
+        navigationItem.title = "Notes"
+        navigationController?.tabBarItem.image = UIImage(named: "paper_icon")
+        tableView.delegate = self
+        tableView.dataSource = self
         
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+         tabBarController?.tabBar.isHidden = false
+//        let fileNotebook = FileNotebook()
+        FileNotebook.get.loadFromFile()
+        notes = FileNotebook.get.notes.reversed()
+        tableView.reloadData()
+        
+    }
 
     
     @objc func performSegueForCreateNote(){
-        print("performSegueForCreateNote")
-        performSegue(withIdentifier: "CreateNote", sender: nil)
+        performSegue(withIdentifier: sugueIndeficatorOpen, sender: nil)
     }
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == sugueIndeficatorOpen {
+            if let vc = segue.destination as? CreateNoteViewController , let index = clickedItemIndex?.row {
+                vc.note = notes[index]
+                clickedItemIndex = nil
+            }
+        }
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+      return  notes.count
     }
-    */
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "NoteTableViewCell", for: indexPath) as! NoteTableViewCell
+        print(cell)
+        let currentNote = notes[indexPath.item]
+        cell.titleLable.text = currentNote.title
+        cell.contentLable.text = currentNote.content
+        cell.colorView.backgroundColor = currentNote.color
+        return cell
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       clickedItemIndex = indexPath
+       performSegue(withIdentifier: sugueIndeficatorOpen, sender: nil)    }
+    
 
 }
+
+

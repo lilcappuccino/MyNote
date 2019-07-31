@@ -10,10 +10,13 @@ import Foundation
 
 class FileNotebook{
     
+    static let get = FileNotebook()
+    
     private (set) var notes = [Note]()
     
     public func add(_ note: Note){
-        notes.append(note)
+      notes.filter{ $0.uid == note.uid }.map{ remove(with: $0.uid) }
+      notes.append(note)
     }
     
     public func remove(with uid: String){

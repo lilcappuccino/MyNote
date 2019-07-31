@@ -13,6 +13,7 @@ extension Note {
     var json : [String: Any]{
         var innerJson = [String : Any]()
         innerJson["title"] = self.title
+        innerJson["uid"] = self.uid
         innerJson["content"] = self.content
         innerJson["self_destruction_date"] = self.selfDestructionDate?.timeIntervalSince1970
         if self.importance.rawValue != Note.Importance.low.rawValue { innerJson["importance"] = self.importance.rawValue }
@@ -31,7 +32,8 @@ extension Note {
         if let noteTitle = json["title"]  as?  String { title = noteTitle }
         if let noteUid = json["uid"]  as?  String { uid = noteUid }
         if let noteContent = json["content"] as? String {content = noteContent}
-        if let noteColor = json["color"] as? String { color = UIColor(hexString: noteColor)}
+        if let noteColor = json["color"] as? String { color = UIColor(hexString: noteColor)
+        }
         if let noteImportance = json["importance"] as? String {
             importance = Note.Importance.init(rawValue: noteImportance) ?? Note.Importance.low
             
@@ -79,28 +81,24 @@ extension UIColor {
     }
     
     public convenience init?(hexString: String) {
-        let r, g, b, a: CGFloat
+        var cString: String = hexString.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
         
-        if hexString.hasPrefix("#") {
-            let start = hexString.index(hexString.startIndex , offsetBy: 1)
-            let hexColor = String( hexString[start...] )
-            
-            if hexColor.count == 8 {
-                let scanner = Scanner(string: hexColor)
-                var hexNumber: UInt64 = 0
-                
-                if scanner.scanHexInt64(&hexNumber) {
-                    r = CGFloat((hexNumber & 0xff000000) >> 24) / 255
-                    g = CGFloat((hexNumber & 0x00ff0000) >> 16) / 255
-                    b = CGFloat((hexNumber & 0x0000ff00) >> 8) / 255
-                    a = CGFloat(hexNumber & 0x000000ff) / 255
-                    
-                    self.init(red: r, green: g, blue: b, alpha: a)
-                    return
-                }
-            }
+        if (cString.hasPrefix("#")) {
+            cString.remove(at: cString.startIndex)
         }
         
-        return nil
+        if ((cString.count) != 6) {
+            return nil
+        }
+        
+        var rgbValue:UInt32 = 0
+        Scanner(string: cString).scanHexInt32(&rgbValue)
+        
+        self.init(
+            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+            alpha: CGFloat(1.0))
+    
     }
 }

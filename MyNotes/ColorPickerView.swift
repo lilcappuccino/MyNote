@@ -255,3 +255,20 @@ private extension UIColor {
 }
 
 
+
+class ColorPickerViewController : UIViewController, ColorPickerDelegate {
+    func didSelectColor(_ color: UIColor?) {
+        let vc = CreateNoteViewController()
+        if let selectedColor = color { vc.selectedColor = selectedColor }
+        navigationController?.popViewController(animated: true)
+    }
+    
+    
+    override func viewDidLoad() {
+        let colorPickerView = ColorPickerView(frame: view.safeAreaLayoutGuide.layoutFrame)
+        view.addSubview(colorPickerView)
+        colorPickerView.delegate = self
+    }
+    
+    
+}

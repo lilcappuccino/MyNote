@@ -23,8 +23,8 @@ struct Note {
         case low = "low"
     }
     
-    init(uid: String =  UUID().uuidString, title : String, content : String, color : UIColor = UIColor.white, selfDestructionDate : Date?, importance : Importance = Importance.low) {
-        self.uid = uid
+    init(uid: String?, title : String, content : String, color : UIColor = UIColor.white, selfDestructionDate : Date?, importance : Importance = Importance.low) {
+        self.uid = uid ?? UUID().uuidString
         self.title = title
         self.content = content
         self.color = color
