@@ -145,37 +145,37 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lus-AR-s09">
-                                                    <rect key="frame" x="20" y="11" width="27" height="27"/>
+                                                    <rect key="frame" x="20" y="11" width="10" height="178"/>
                                                     <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="27" id="VKT-Ca-uhW"/>
-                                                        <constraint firstAttribute="width" secondItem="lus-AR-s09" secondAttribute="height" multiplier="1:1" id="XxF-K1-hzK"/>
+                                                        <constraint firstAttribute="width" constant="10" id="WwT-d4-4GJ"/>
                                                     </constraints>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FoG-Wy-A5P">
-                                                    <rect key="frame" x="20" y="46" width="374" height="143"/>
-                                                    <string key="text">Label fd fdsf dsf dsf sdf sdf dsf dsf dsf dsf dsf dsf dsf dsfdsLabel fd fdsf dsf dsf sdf sdf dsf dsf dsf dsf dsf dsf dsf dsfdsLabel fd fdsf dsf dsf sdf sdf dsf dsf dsf dsf dsf dsf dsf dsfdsLabel fd fdsf dsf dsf sdf sdf dsf dsf dsf dsf dsf dsf dsf dsfds</string>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FoG-Wy-A5P">
+                                                    <rect key="frame" x="45" y="63" width="349" height="101.66666666666669"/>
+                                                    <string key="text">dsfdsdsfds dsfdsdsfdsdsfdsdsfds dsfds dsfds dsfds dsfds dsfdsdsfdsdsfds dsfdsdsfdsdsfdsdsfds dsfds dsfds dsfds dsfds dsfdsdsfdsdsfds dsfdsdsfdsdsfdsdsfds dsfds dsfds dsfds dsfds dsfdsdsfdsdsfds dsfdsdsfdsdsfdsdsfds dsfds dsfds dsfds dsfds dsfds</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFp-a0-DJr">
-                                                    <rect key="frame" x="55" y="14.999999999999998" width="331" height="19.333333333333329"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFp-a0-DJr">
+                                                    <rect key="frame" x="45" y="35.666666666666657" width="341" height="19.333333333333336"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="KFp-a0-DJr" firstAttribute="leading" secondItem="lus-AR-s09" secondAttribute="trailing" constant="8" symbolic="YES" id="9Mi-uu-cQR"/>
-                                                <constraint firstItem="FoG-Wy-A5P" firstAttribute="top" secondItem="lus-AR-s09" secondAttribute="bottom" constant="8" symbolic="YES" id="PYQ-Jr-XM8"/>
-                                                <constraint firstItem="FoG-Wy-A5P" firstAttribute="leading" secondItem="plT-m2-Uqe" secondAttribute="leadingMargin" id="TG8-aM-qMo"/>
-                                                <constraint firstItem="lus-AR-s09" firstAttribute="leading" secondItem="plT-m2-Uqe" secondAttribute="leadingMargin" id="U4o-c8-anj"/>
-                                                <constraint firstItem="lus-AR-s09" firstAttribute="top" secondItem="plT-m2-Uqe" secondAttribute="topMargin" id="a9z-jq-stT"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="FoG-Wy-A5P" secondAttribute="bottom" id="kA2-Su-0I2"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="FoG-Wy-A5P" secondAttribute="trailing" id="lpf-xG-Gd3"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="KFp-a0-DJr" secondAttribute="trailing" constant="8" id="qlx-Od-bF8"/>
-                                                <constraint firstItem="KFp-a0-DJr" firstAttribute="centerY" secondItem="lus-AR-s09" secondAttribute="centerY" id="zRv-cA-pDv"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="KFp-a0-DJr" secondAttribute="trailing" constant="8" id="0uM-xe-3Ow"/>
+                                                <constraint firstItem="FoG-Wy-A5P" firstAttribute="top" secondItem="KFp-a0-DJr" secondAttribute="bottom" constant="8" symbolic="YES" id="CyX-vc-lVl"/>
+                                                <constraint firstItem="lus-AR-s09" firstAttribute="top" secondItem="plT-m2-Uqe" secondAttribute="topMargin" id="HWU-fe-AQm"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="FoG-Wy-A5P" secondAttribute="bottom" id="JMK-jk-iRE"/>
+                                                <constraint firstItem="FoG-Wy-A5P" firstAttribute="leading" secondItem="lus-AR-s09" secondAttribute="trailing" constant="15" id="QVj-YP-hEn"/>
+                                                <constraint firstItem="lus-AR-s09" firstAttribute="bottom" secondItem="plT-m2-Uqe" secondAttribute="bottomMargin" id="ikz-Ao-4pn"/>
+                                                <constraint firstItem="FoG-Wy-A5P" firstAttribute="trailing" secondItem="plT-m2-Uqe" secondAttribute="trailingMargin" id="ptP-o8-IiG"/>
+                                                <constraint firstItem="KFp-a0-DJr" firstAttribute="leading" secondItem="lus-AR-s09" secondAttribute="trailing" constant="15" id="r85-tI-NW9"/>
+                                                <constraint firstItem="lus-AR-s09" firstAttribute="leading" secondItem="plT-m2-Uqe" secondAttribute="leadingMargin" id="x5l-aL-0e2"/>
+                                                <constraint firstItem="KFp-a0-DJr" firstAttribute="top" secondItem="plT-m2-Uqe" secondAttribute="topMargin" id="yzQ-Hw-jbI"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -204,7 +204,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2YD-6I-2el" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1632" y="-1775"/>
+            <point key="canvasLocation" x="1631.8840579710147" y="-1775.2232142857142"/>
         </scene>
         <!--Create Note View Controller-->
         <scene sceneID="CR5-9h-RoE">

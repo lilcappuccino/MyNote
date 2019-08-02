@@ -15,6 +15,10 @@ class NotesListViewController: UIViewController, UITableViewDelegate, UITableVie
     
     private var clickedItemIndex : IndexPath?
     
+    let backendQueue = OperationQueue()
+    let dbQueue = OperationQueue()
+    let commonQueue = OperationQueue()
+    
     var notes = [Note]()
 
     override func viewDidLoad() {
@@ -25,17 +29,26 @@ class NotesListViewController: UIViewController, UITableViewDelegate, UITableVie
         tableView.delegate = self
         tableView.dataSource = self
         
-
-        // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
          tabBarController?.tabBar.isHidden = false
-//        let fileNotebook = FileNotebook()
-        FileNotebook.get.loadFromFile()
-        notes = FileNotebook.get.notes.reversed()
-        tableView.reloadData()
+         loadContent()
+        
+    }
+    
+    private func loadContent(){
+        let loadOperation = LoadNoteOperation(notebook: FileNotebook.get, backendQueue: backendQueue, dbQueue: dbQueue)
+        commonQueue.addOperation(loadOperation)
+        let uiBlock = BlockOperation{
+            if let loadedNotes = loadOperation.notes {
+                self.notes = loadedNotes.reversed()
+                self.tableView.reloadData()
+            }
+        }
+        uiBlock.addDependency(loadOperation)
+        OperationQueue.main.addOperation(uiBlock)
         
     }
 
@@ -60,7 +73,6 @@ class NotesListViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NoteTableViewCell", for: indexPath) as! NoteTableViewCell
-        print(cell)
         let currentNote = notes[indexPath.item]
         cell.titleLable.text = currentNote.title
         cell.contentLable.text = currentNote.content
@@ -76,13 +88,24 @@ class NotesListViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            notes.remove(at: indexPath.row)
-            FileNotebook.get.replace(to: notes)
-            tableView.deleteRows(at: [indexPath], with: .bottom)
+    
+            let removeOperation = RemoveNoteOperation(noteUid: notes[indexPath.row].uid, notebook: FileNotebook.get, backendQueue: backendQueue, dbQueue: dbQueue)
+            commonQueue.addOperation(removeOperation)
+            let uiBlock = BlockOperation {
+                self.notes.remove(at: indexPath.row)
+                tableView.beginUpdates()
+                tableView.deleteRows(at: [indexPath], with: .bottom)
+                tableView.endUpdates()
+            }
+            uiBlock.addDependency(removeOperation)
+          OperationQueue.main.addOperation(uiBlock)
+            
         }
+        
     }
     
 
-}
+  }
+
 
 
