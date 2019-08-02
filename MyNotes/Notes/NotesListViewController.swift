@@ -71,7 +71,16 @@ class NotesListViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
        clickedItemIndex = indexPath
-       performSegue(withIdentifier: sugueIndeficatorOpen, sender: nil)    }
+       performSegue(withIdentifier: sugueIndeficatorOpen, sender: nil)
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            notes.remove(at: indexPath.row)
+            FileNotebook.get.replace(to: notes)
+            tableView.deleteRows(at: [indexPath], with: .bottom)
+        }
+    }
     
 
 }

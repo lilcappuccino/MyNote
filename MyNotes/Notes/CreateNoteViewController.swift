@@ -46,11 +46,28 @@ class CreateNoteViewController: UIViewController , ColorStackDelegate, ColorPick
     
     
     @objc func seveNote(){
-        FileNotebook.get.add(Note(uid: note?.uid, title: titleText.text ?? "", content: contentTextView.text, color: selectedColor, selfDestructionDate: nil, importance: Note.Importance.hight))
-        FileNotebook.get.saveToFile()
-        navigationController?.popViewController(animated: true)
+        showLoadingState()
+        let backendQueue = OperationQueue()
+        let dbQueue = OperationQueue()
+        let commonQueue = OperationQueue()
+        let savingNote = Note(uid: note?.uid, title: titleText.text ?? "", content: contentTextView.text, color: selectedColor, selfDestructionDate: nil, importance: Note.Importance.hight)
+        let saveNote = SaveNoteOperation(note: savingNote, notebook: FileNotebook.get, backendQueue: backendQueue, dbQueue: dbQueue)
+        commonQueue.addOperation(saveNote)
+        let uiBlock = BlockOperation {
+            sleep(1)
+            self.navigationController?.popViewController(animated: true)
+        }
+        uiBlock.addDependency(saveNote)
+        OperationQueue.main.addOperation(uiBlock)
+    
     }
     
+    private func showLoadingState(){
+        let uiBusy = UIActivityIndicatorView(style: .gray)
+        uiBusy.hidesWhenStopped = true
+        uiBusy.startAnimating()
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: uiBusy)
+    }
     
     private func inputingDataFromNote(){
         if let currentNote = note {

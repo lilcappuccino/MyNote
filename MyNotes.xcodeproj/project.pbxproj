@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F35AE8022F3AA3A00DBEAF8 /* RemoveNotesBackenOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F35AE7F22F3AA3A00DBEAF8 /* RemoveNotesBackenOperation.swift */; };
+		6F36153922F301F200F3CD3E /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F36153822F301F200F3CD3E /* GalleryViewController.swift */; };
 		6F6275E622DF8277008E5E74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6275E522DF8277008E5E74 /* AppDelegate.swift */; };
 		6F6275E822DF8277008E5E74 /* OldCreateNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6275E722DF8277008E5E74 /* OldCreateNoteViewController.swift */; };
 		6F6275EB22DF8277008E5E74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F6275E922DF8277008E5E74 /* Main.storyboard */; };
@@ -25,9 +27,22 @@
 		6FA9B32D22EF0A5B00F827A2 /* CreateNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA9B32C22EF0A5B00F827A2 /* CreateNoteViewController.swift */; };
 		6FA9B33222F0C95B00F827A2 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA9B33122F0C95B00F827A2 /* ColorPickerView.swift */; };
 		6FA9B33422F0F1D500F827A2 /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA9B33322F0F1D500F827A2 /* NoteTableViewCell.swift */; };
+		6FE60A4322F310A20060D641 /* SaveNotesBackendOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE60A4222F310A20060D641 /* SaveNotesBackendOperation.swift */; };
+		6FE60A4522F310B60060D641 /* LoadNotesBackendOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE60A4422F310B60060D641 /* LoadNotesBackendOperation.swift */; };
+		6FE60A4722F310CC0060D641 /* SaveNoteDBOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE60A4622F310CC0060D641 /* SaveNoteDBOperation.swift */; };
+		6FE60A4922F310D60060D641 /* LoadNoteDBOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE60A4822F310D60060D641 /* LoadNoteDBOperation.swift */; };
+		6FE60A4B22F310E30060D641 /* RemoveNoteDBOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE60A4A22F310E30060D641 /* RemoveNoteDBOperation.swift */; };
+		6FE60A4D22F310F70060D641 /* SaveNoteOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE60A4C22F310F70060D641 /* SaveNoteOperation.swift */; };
+		6FE60A4F22F311040060D641 /* LoadNoteOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE60A4E22F311040060D641 /* LoadNoteOperation.swift */; };
+		6FE60A5122F311180060D641 /* RemoveNoteOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE60A5022F311180060D641 /* RemoveNoteOperation.swift */; };
+		6FE60A5322F311A70060D641 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE60A5222F311A70060D641 /* AsyncOperation.swift */; };
+		6FE60A5522F3135D0060D641 /* BaseBackendOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE60A5422F3135D0060D641 /* BaseBackendOperation.swift */; };
+		6FE60A5722F313FC0060D641 /* BaseDBOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE60A5622F313FC0060D641 /* BaseDBOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F35AE7F22F3AA3A00DBEAF8 /* RemoveNotesBackenOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveNotesBackenOperation.swift; sourceTree = "<group>"; };
+		6F36153822F301F200F3CD3E /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		6F6275E222DF8277008E5E74 /* MyNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F6275E522DF8277008E5E74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F6275E722DF8277008E5E74 /* OldCreateNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldCreateNoteViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +63,17 @@
 		6FA9B32C22EF0A5B00F827A2 /* CreateNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNoteViewController.swift; sourceTree = "<group>"; };
 		6FA9B33122F0C95B00F827A2 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 		6FA9B33322F0F1D500F827A2 /* NoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
+		6FE60A4222F310A20060D641 /* SaveNotesBackendOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveNotesBackendOperation.swift; sourceTree = "<group>"; };
+		6FE60A4422F310B60060D641 /* LoadNotesBackendOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadNotesBackendOperation.swift; sourceTree = "<group>"; };
+		6FE60A4622F310CC0060D641 /* SaveNoteDBOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveNoteDBOperation.swift; sourceTree = "<group>"; };
+		6FE60A4822F310D60060D641 /* LoadNoteDBOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadNoteDBOperation.swift; sourceTree = "<group>"; };
+		6FE60A4A22F310E30060D641 /* RemoveNoteDBOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveNoteDBOperation.swift; sourceTree = "<group>"; };
+		6FE60A4C22F310F70060D641 /* SaveNoteOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveNoteOperation.swift; sourceTree = "<group>"; };
+		6FE60A4E22F311040060D641 /* LoadNoteOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadNoteOperation.swift; sourceTree = "<group>"; };
+		6FE60A5022F311180060D641 /* RemoveNoteOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveNoteOperation.swift; sourceTree = "<group>"; };
+		6FE60A5222F311A70060D641 /* AsyncOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
+		6FE60A5422F3135D0060D641 /* BaseBackendOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseBackendOperation.swift; sourceTree = "<group>"; };
+		6FE60A5622F313FC0060D641 /* BaseDBOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDBOperation.swift; sourceTree = "<group>"; };
 		A5AE53D03478C35DE5DE2177 /* Pods-MyNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNotes.debug.xcconfig"; path = "Target Support Files/Pods-MyNotes/Pods-MyNotes.debug.xcconfig"; sourceTree = "<group>"; };
 		E3678203D354E1726AE08656 /* Pods-MyNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNotes.release.xcconfig"; path = "Target Support Files/Pods-MyNotes/Pods-MyNotes.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +98,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6F36153722F3014000F3CD3E /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				6FA9B33322F0F1D500F827A2 /* NoteTableViewCell.swift */,
+				6FA9B32A22EF091D00F827A2 /* NotesListViewController.swift */,
+				6FA9B32C22EF0A5B00F827A2 /* CreateNoteViewController.swift */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
 		6F6275D922DF8277008E5E74 = {
 			isa = PBXGroup;
 			children = (
@@ -93,18 +129,17 @@
 		6F6275E422DF8277008E5E74 /* MyNotes */ = {
 			isa = PBXGroup;
 			children = (
+				6F6275E522DF8277008E5E74 /* AppDelegate.swift */,
+				6FE60A3F22F310480060D641 /* AsyncOperation */,
+				6F36153722F3014000F3CD3E /* Notes */,
+				6F7F182B22F2FFD100516FB0 /* Gallery */,
 				6FA9B32E22F0550500F827A2 /* Support */,
 				6F62760222E34C9F008E5E74 /* Model */,
-				6F6275E522DF8277008E5E74 /* AppDelegate.swift */,
-				6F6275E722DF8277008E5E74 /* OldCreateNoteViewController.swift */,
 				6F6275EF22DF827C008E5E74 /* Assets.xcassets */,
 				6F6275EC22DF8277008E5E74 /* MyNotes.xcdatamodeld */,
 				6F96A7AD22E8AA2B00AB657E /* CircleUIView.swift */,
 				6FA9B32622EF017600F827A2 /* ColorStackUIView.swift */,
 				6FA9B32822EF01E400F827A2 /* ColorStackUIView.xib */,
-				6FA9B33322F0F1D500F827A2 /* NoteTableViewCell.swift */,
-				6FA9B32A22EF091D00F827A2 /* NotesListViewController.swift */,
-				6FA9B32C22EF0A5B00F827A2 /* CreateNoteViewController.swift */,
 				6F6275F422DF827C008E5E74 /* Info.plist */,
 				6FA9B33122F0C95B00F827A2 /* ColorPickerView.swift */,
 				6F6275E922DF8277008E5E74 /* Main.storyboard */,
@@ -122,13 +157,57 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		6F7F182B22F2FFD100516FB0 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				6F36153822F301F200F3CD3E /* GalleryViewController.swift */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
 		6FA9B32E22F0550500F827A2 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				6F6275E722DF8277008E5E74 /* OldCreateNoteViewController.swift */,
 				6F6275F122DF827C008E5E74 /* LaunchScreen.storyboard */,
 				6F7F182922F1CD2E00516FB0 /* UIViewControllerExtension.swift */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		6FE60A3F22F310480060D641 /* AsyncOperation */ = {
+			isa = PBXGroup;
+			children = (
+				6FE60A4022F310640060D641 /* BaseBackendOpertation */,
+				6FE60A4122F310760060D641 /* BaseDBOperation */,
+				6FE60A4C22F310F70060D641 /* SaveNoteOperation.swift */,
+				6FE60A4E22F311040060D641 /* LoadNoteOperation.swift */,
+				6FE60A5022F311180060D641 /* RemoveNoteOperation.swift */,
+				6FE60A5222F311A70060D641 /* AsyncOperation.swift */,
+			);
+			path = AsyncOperation;
+			sourceTree = "<group>";
+		};
+		6FE60A4022F310640060D641 /* BaseBackendOpertation */ = {
+			isa = PBXGroup;
+			children = (
+				6FE60A4222F310A20060D641 /* SaveNotesBackendOperation.swift */,
+				6FE60A4422F310B60060D641 /* LoadNotesBackendOperation.swift */,
+				6FE60A5422F3135D0060D641 /* BaseBackendOperation.swift */,
+				6F35AE7F22F3AA3A00DBEAF8 /* RemoveNotesBackenOperation.swift */,
+			);
+			path = BaseBackendOpertation;
+			sourceTree = "<group>";
+		};
+		6FE60A4122F310760060D641 /* BaseDBOperation */ = {
+			isa = PBXGroup;
+			children = (
+				6FE60A4622F310CC0060D641 /* SaveNoteDBOperation.swift */,
+				6FE60A4822F310D60060D641 /* LoadNoteDBOperation.swift */,
+				6FE60A4A22F310E30060D641 /* RemoveNoteDBOperation.swift */,
+				6FE60A5622F313FC0060D641 /* BaseDBOperation.swift */,
+			);
+			path = BaseDBOperation;
 			sourceTree = "<group>";
 		};
 		A7EC2C56C97C9E8355DB5D57 /* Pods */ = {
@@ -257,15 +336,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F62760122E23591008E5E74 /* FileNotebook.swift in Sources */,
+				6FE60A5522F3135D0060D641 /* BaseBackendOperation.swift in Sources */,
+				6FE60A4322F310A20060D641 /* SaveNotesBackendOperation.swift in Sources */,
+				6F36153922F301F200F3CD3E /* GalleryViewController.swift in Sources */,
 				6F6275FF22E1FA0F008E5E74 /* NoteExtension.swift in Sources */,
+				6FE60A5722F313FC0060D641 /* BaseDBOperation.swift in Sources */,
+				6FE60A4D22F310F70060D641 /* SaveNoteOperation.swift in Sources */,
 				6F6275E822DF8277008E5E74 /* OldCreateNoteViewController.swift in Sources */,
+				6F35AE8022F3AA3A00DBEAF8 /* RemoveNotesBackenOperation.swift in Sources */,
 				6F6275E622DF8277008E5E74 /* AppDelegate.swift in Sources */,
+				6FE60A5122F311180060D641 /* RemoveNoteOperation.swift in Sources */,
 				6F6275EE22DF8277008E5E74 /* MyNotes.xcdatamodeld in Sources */,
+				6FE60A4922F310D60060D641 /* LoadNoteDBOperation.swift in Sources */,
 				6FA9B32B22EF091D00F827A2 /* NotesListViewController.swift in Sources */,
+				6FE60A5322F311A70060D641 /* AsyncOperation.swift in Sources */,
 				6F6275FB22DF8424008E5E74 /* Note.swift in Sources */,
+				6FE60A4B22F310E30060D641 /* RemoveNoteDBOperation.swift in Sources */,
 				6FA9B33222F0C95B00F827A2 /* ColorPickerView.swift in Sources */,
+				6FE60A4722F310CC0060D641 /* SaveNoteDBOperation.swift in Sources */,
 				6F96A7AE22E8AA2B00AB657E /* CircleUIView.swift in Sources */,
 				6F7F182A22F1CD2E00516FB0 /* UIViewControllerExtension.swift in Sources */,
+				6FE60A4F22F311040060D641 /* LoadNoteOperation.swift in Sources */,
+				6FE60A4522F310B60060D641 /* LoadNotesBackendOperation.swift in Sources */,
 				6FA9B32D22EF0A5B00F827A2 /* CreateNoteViewController.swift in Sources */,
 				6FA9B32722EF017600F827A2 /* ColorStackUIView.swift in Sources */,
 				6FA9B33422F0F1D500F827A2 /* NoteTableViewCell.swift in Sources */,

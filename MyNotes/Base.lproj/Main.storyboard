@@ -97,17 +97,29 @@
             </objects>
             <point key="canvasLocation" x="-1628" y="219"/>
         </scene>
-        <!--Galary-->
+        <!--Gallery-->
         <scene sceneID="BLJ-WH-ic0">
             <objects>
-                <viewController id="0tq-xM-z5s" sceneMemberID="viewController">
+                <viewController id="0tq-xM-z5s" customClass="GalleryViewController" customModule="MyNotes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c6F-Pu-upv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="coming soon.." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Zo-YO-dwp">
+                                <rect key="frame" x="125.00000000000001" y="413.66666666666669" width="164.33333333333337" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Zo-YO-dwp" firstAttribute="centerX" secondItem="k6r-g4-mJk" secondAttribute="centerX" id="IFQ-PC-HFV"/>
+                            <constraint firstItem="6Zo-YO-dwp" firstAttribute="centerY" secondItem="k6r-g4-mJk" secondAttribute="centerY" id="agc-eo-wdp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="k6r-g4-mJk"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Galary" selectedImage="album-simple-7" id="edg-lu-toB"/>
+                    <tabBarItem key="tabBarItem" title="Gallery" image="album_icon" landscapeImage="album_icon" selectedImage="album_icon" id="edg-lu-toB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jV3-oP-pVv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -346,7 +358,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="album-simple-7" width="30" height="30"/>
+        <image name="album_icon" width="30" height="30"/>
         <image name="paper_icon" width="30" height="30"/>
     </resources>
 </document>
