@@ -10,14 +10,26 @@ import Foundation
 
 class FileNotebook{
     
+    static let get = FileNotebook()
+    
+    private init(){}
+    
+    
     private (set) var notes = [Note]()
     
     public func add(_ note: Note){
-        notes.append(note)
+      notes.filter{ $0.uid == note.uid }.map{ remove(with: $0.uid) }
+      notes.append(note)
+    }
+    
+    public func replace(to notes: [Note] ){
+        self.notes = notes
+        saveToFile()
     }
     
     public func remove(with uid: String){
         notes = notes.filter {$0.uid != uid }
+        saveToFile()
     }
     
     public func saveToFile() {
@@ -40,7 +52,7 @@ class FileNotebook{
                 let pathFile = path.appendingPathComponent("notebook.json")
                 if let data = FileManager.default.contents(atPath: pathFile.path),
                     let jsonData = try JSONSerialization.jsonObject(with: data, options: []) as? [[String: Any]] {
-                    
+                
                     jsonData.forEach{ if let note = Note.parse(json: $0){
                         notes.append(note)
                         }

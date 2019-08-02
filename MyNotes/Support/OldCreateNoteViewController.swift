@@ -30,7 +30,7 @@ class OldCreateNoteViewController: UIViewController, UIGestureRecognizerDelegate
         destroyDatePicker.isHidden = true
 //        prepareUITextView()
         updateColorPickerAchor(isDataPickerOn: destroyDateSwitcher.isOn)
-        registerGuesureForColorsButton()
+//        registerGuesureForColorsButton()
         colorsChooserView.first?.isGradient = true
         colorDialogView.layer.cornerRadius = 10
     }
@@ -74,19 +74,19 @@ class OldCreateNoteViewController: UIViewController, UIGestureRecognizerDelegate
         constraint?.isActive = true
     }
     
-    private func registerGuesureForColorsButton(){
-        colorsChooserView.forEach { view in
-        let tap = UITapGestureRecognizer(target: self, action: #selector(onColorChooserClick(sender:)))
-        tap.delegate = self
-        view.addGestureRecognizer(tap)
-        }
+//    private func registerGuesureForColorsButton(){
+//        colorsChooserView.forEach { view in
+//        let tap = UITapGestureRecognizer(target: self, action: #selector(onColorChooserClick(sender:)))
+//        tap.delegate = self
+//        view.addGestureRecognizer(tap)
+//        }
     }
     
 //    private func prepareUITextView(){
 //        inputtingContentTextView.delegate = self
 //        textViewDidChange(inputtingContentTextView)
 //        inputtingContentTextView.isScrollEnabled = false
-    }
+    
  
 
 //}
