@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class CreateNoteViewController: UIViewController , ColorStackDelegate, ColorPickerDelegate {
     @IBOutlet weak var titleText: UITextField!
@@ -14,6 +15,8 @@ class CreateNoteViewController: UIViewController , ColorStackDelegate, ColorPick
     @IBOutlet weak var colorStackView: ColorStackUIView!
     @IBOutlet weak var destroyDatePicker: UIDatePicker!
     @IBOutlet weak var destroyDateSwitcher: UISwitch!
+    
+    var backgroundContext: NSManagedObjectContext!
     
     public var selectedColor = UIColor.white {
         didSet{
@@ -51,15 +54,26 @@ class CreateNoteViewController: UIViewController , ColorStackDelegate, ColorPick
         let dbQueue = OperationQueue()
         let commonQueue = OperationQueue()
         let savingNote = Note(uid: note?.uid, title: titleText.text ?? "", content: contentTextView.text, color: selectedColor, selfDestructionDate: nil, importance: Note.Importance.hight)
-        let saveNote = SaveNoteOperation(note: savingNote, notebook: FileNotebook.get, backendQueue: backendQueue, dbQueue: dbQueue)
+        let saveNote = SaveNoteOperation(note: savingNote, notebook: FileNotebook.shared, backgroundContext: backgroundContext, backendQueue: backendQueue, dbQueue: dbQueue)
         commonQueue.addOperation(saveNote)
         let uiBlock = BlockOperation {
-            sleep(1)
+            if saveNote.result == true {
             self.navigationController?.popViewController(animated: true)
+            } else { self.showErrorMessage() }
         }
         uiBlock.addDependency(saveNote)
         OperationQueue.main.addOperation(uiBlock)
     
+    }
+    
+    private func showErrorMessage(){
+        let alert = UIAlertController(title: "Oops", message: "Something was wrong. Try again", preferredStyle: .actionSheet)
+        alert.addAction(UIAlertAction(title: "Retry", style: .default, handler: retrySaving ))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func retrySaving(action: UIAlertAction) {
+        seveNote()
     }
     
     private func showLoadingState(){
@@ -72,7 +86,7 @@ class CreateNoteViewController: UIViewController , ColorStackDelegate, ColorPick
     private func inputingDataFromNote(){
         if let currentNote = note {
             titleText.text = currentNote.title
-            contentTextView.text = currentNote.content
+            contentTextView.text = currentNote.description
             contentTextView.textColor = UIColor.black
             selectedColor = currentNote.color
         }

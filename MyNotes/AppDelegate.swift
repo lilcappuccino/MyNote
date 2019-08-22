@@ -8,20 +8,56 @@
 
 import UIKit
 import CoreData
+import SwiftyBeaver
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var container: NSPersistentContainer!
+    
+    
+    func createContainer(completion: @escaping(NSPersistentContainer) -> ()){
+        let container = NSPersistentContainer(name: "MyNotes")
+        container.loadPersistentStores { (_, error) in
+            guard error == nil else {
+                CustomLog.error(message: "Failed to load store")
+                fatalError("Failed to load store")
+            }
+            DispatchQueue.main.async {
+                completion(container)
+            }
+        }
+    }
+
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
- 
+        setupSwiftyBeaverLogging()
+        createContainer { (container) in
+            self.container = container
+            if let tbc = self.window?.rootViewController as? UITabBarController,
+                let nc = tbc.viewControllers?[0] as? UINavigationController,
+                let vc = nc.topViewController as? NotesListViewController {
+                vc.backgroundContext = container.newBackgroundContext()
+                
+            }
+       
+        }
+        
         return true
     }
     
+  func setupSwiftyBeaverLogging(){
+    let console = ConsoleDestination()
+    SwiftyBeaver.addDestination(console)
+    let platform = SBPlatformDestination(appID: "JXQ0Y7",
+                                         appSecret: "xFtogpWezqhVoojhrouyopvaeoAg7K7z",
+                                         encryptionKey: "kwl3Pqnctxla5msgmunBxgyb6q1aeeub")
 
+    SwiftyBeaver.addDestination(platform)
+    }
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

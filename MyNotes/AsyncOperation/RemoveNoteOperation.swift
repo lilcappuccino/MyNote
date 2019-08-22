@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreData
 
 
 class RemoveNoteOperation: AsyncOperation {
@@ -14,32 +15,35 @@ class RemoveNoteOperation: AsyncOperation {
     private let notebook: FileNotebook
     private let removeFromDb: RemoveNoteDBOperation
     private let removeFromBackend: RemoveNotesBackendOperation
+    private let backgroundContext: NSManagedObjectContext
     
     private(set) var result: Bool? = false
     
+    /// Remove from local, then update backend storge. If duaring savingt to backend  we will have error = retry
     init(noteUid: String,
          notebook: FileNotebook,
+         backgroundContext: NSManagedObjectContext,
          backendQueue: OperationQueue,
          dbQueue: OperationQueue) {
         self.noteUid = noteUid
         self.notebook = notebook
+        self.backgroundContext = backgroundContext
         print("init RemoveOperation \(Thread.current)")
-        removeFromDb = RemoveNoteDBOperation(notebook: notebook, noteUid: noteUid)
-        removeFromBackend = RemoveNotesBackendOperation(notesUid: noteUid)
+        removeFromDb = RemoveNoteDBOperation(backgroundContext: backgroundContext, notebook: notebook, noteUid: noteUid)
+        removeFromBackend = RemoveNotesBackendOperation(notebook: notebook, notesUid: noteUid)
         super.init()
         
-
-        removeFromDb.addDependency(removeFromBackend)
-        backendQueue.addOperation(removeFromBackend)
-        
-
-        self.addDependency(removeFromDb)
         dbQueue.addOperation(removeFromDb)
+        removeFromBackend.addDependency(removeFromDb)
+        backendQueue.addOperation(removeFromBackend)
+        self.addDependency(removeFromBackend)
+        
     }
     
     override func main() {
-        print("RemoveNoteOperation \(Thread.current)")
-        switch removeFromBackend.result! {
+        print("3-RemoveOperation")
+        guard let backendResult = removeFromBackend.result else { result = false; return  }
+        switch backendResult {
         case .success:
             result = true
         case .failure:

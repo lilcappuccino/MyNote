@@ -14,7 +14,7 @@ extension Note {
         var innerJson = [String : Any]()
         innerJson["title"] = self.title
         innerJson["uid"] = self.uid
-        innerJson["content"] = self.content
+        innerJson["content"] = self.description
         innerJson["self_destruction_date"] = self.selfDestructionDate?.timeIntervalSince1970
         if self.importance.rawValue != Note.Importance.low.rawValue { innerJson["importance"] = self.importance.rawValue }
         if self.color != UIColor.white { innerJson["color"] = self.color.htmlRGBColor }
@@ -34,7 +34,7 @@ extension Note {
         if let noteContent = json["content"] as? String {content = noteContent}
         if let noteColor = json["color"] as? String { color = UIColor(hexString: noteColor)
         }
-        if let noteImportance = json["importance"] as? String {
+        if let noteImportance = json["importance"] as? Int {
             importance = Note.Importance.init(rawValue: noteImportance) ?? Note.Importance.low
             
         }

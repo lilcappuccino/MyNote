@@ -7,68 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05CA23C43024A74D57C330814E1A8351 /* DDLogMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 929513D6231F0FC998DC9F4E2757B838 /* DDLogMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		06FAABF17CA6C7CA051EEDC9C6725D2D /* DDOSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A95BDF54025CF8ED45C6D7CF71B53DB1 /* DDOSLogger.m */; };
-		096CB0404EF464DC1E8D5F5F5B0A210E /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E96523DB46A98D1F754D2386EE5A7E /* DDFileLogger.m */; };
-		0AFB740C1102909E64B8B1C854C76C0F /* ChromaAddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05961343083AC02F8ADC882727D26788 /* ChromaAddButton.swift */; };
-		104F93F51E9874729C21655508F6D9D9 /* DDASLLogCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = C78D7B881456675621B4787A9BD33B51 /* DDASLLogCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		158337C39C663083CC1858B14F443D05 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3F995CB00B5F70287325E26E6875DD /* DDAbstractDatabaseLogger.m */; };
-		23F8AF0CCD6932BD129CCB61619ADB3D /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EDD72A666C7045512C0D95AFD8665B1 /* DDASLLogCapture.m */; };
-		25951A525FDB265713DACAF9184F4292 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C03C39D01159A1634AA00402CEE56B33 /* DDTTYLogger.m */; };
-		2846DF95EF5D23A428BBFB4BE58E86E7 /* ColorModeToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DB898C8533F58F8EE407BE3F7663E2 /* ColorModeToggleButton.swift */; };
-		31D89BB7BEF7F212A97011F76D7AE42C /* ChromaHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A530A42BCADBAC444913637D28CF9A75 /* ChromaHandle.swift */; };
-		3367285437A3DD3F31EFE9720D906A7E /* ChromaShadeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2AF863145CFB95F62A9A7FF0581F11 /* ChromaShadeSlider.swift */; };
-		3F8D6E16E7F40A3AD3B208ED3BCD6F97 /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1720D5BBF5E583F20D8B3F99071666DC /* DDMultiFormatter.m */; };
-		47771D4F38962FF6D770D8D36E43D021 /* CocoaLumberjack.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D5E3CDE626DAF3B04032D39771B5110 /* CocoaLumberjack.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4CAD49704680286622E12C021FB60917 /* CocoaLumberjack-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E846073D8CDF86530C882F815AFF4099 /* CocoaLumberjack-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4EAC3D69F4903411B1C8A52E8AFE90DD /* DDLegacyMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 098A07F5E99D8BE0C42BD93C4B9560F0 /* DDLegacyMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		50C3DDDD2F6D4B0719D350ACFFE76741 /* ChromaColorPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 12DD62B75D4AB721FF33647D2D96F3D9 /* ChromaColorPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		571D67412D63E7B133DC365423BFC3F3 /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 12EA11A7E4D68E40E1654719E272C7D2 /* DDLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5A176CDB39E2631FAEE15AA7C55F4B17 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5149DF6DE10398415B2FCF4BF70370F3 /* DDLog.m */; };
-		624EB5C2E3BAE9752E44A6D6ED63C61D /* DDContextFilterLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = C42D535F8B7CF63FDC59E24483050014 /* DDContextFilterLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		67A4C4A5764636432DC4E24C259A0F7F /* CLIColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 507899D022D3FC471C4F85CEA8498CEE /* CLIColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6A705DACC676BCB94BAFB2979394CEA6 /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD6A5618B37200811CB1EAE915E1BB4 /* DDDispatchQueueLogFormatter.m */; };
-		7BB947EA62030EB477712B705A7B446F /* SwiftLogLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = 97F594AD987115AE278A8730F9A0BE43 /* SwiftLogLevel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D9FD7963BD0891B07B86C1BA858930B /* DDFileLogger+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BF39E647EE09AE082AE7AD388660EAD /* DDFileLogger+Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		83CC221B10D47B704195093BDC414867 /* DDAssert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DE108F27625AC47699E4E16F7F80E0 /* DDAssert.swift */; };
-		89141F0C37E88953C21B8A3A974ECBC7 /* DDFileLogger+Buffering.m in Sources */ = {isa = PBXBuildFile; fileRef = 43EA4FA528AFF4BCF2FFA556CA4A12F4 /* DDFileLogger+Buffering.m */; };
-		8950A6075465147B89F0332602FFD110 /* Pods-MyNotes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A564CDE13D1EC82E407BE4752557F7 /* Pods-MyNotes-dummy.m */; };
-		8A06D2CF5742FD2D42787EF27D59C98A /* DDLoggerNames.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DD92470B2FE5D2C88E58062AD97A72 /* DDLoggerNames.m */; };
-		940C063BA63E04C26083CA576243D70E /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = F1E8A9FF6713D7A1F0EBB21817E86360 /* DDASLLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A086395C3C4300488EF23AF3D67A9B10 /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = C982AA975AA902570FAEEF11C52352BC /* DDAbstractDatabaseLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A2E5B603E340518BE2213B1E7338F11F /* Pods-MyNotes-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F789D93BBDD9445241AB53BB44A91AE /* Pods-MyNotes-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A5E839070BC3DF5291BE4CC48FAB08E6 /* DDFileLogger+Buffering.h in Headers */ = {isa = PBXBuildFile; fileRef = D6357A06EDA18DA97D85F0F2AFF5B31F /* DDFileLogger+Buffering.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AAEBD696A35751830250E614C2BC998A /* ChromaColorPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DE2ED9B066A4E22CDB14EF87320D29 /* ChromaColorPicker-dummy.m */; };
-		B25AFA2775DFEC1085D803C9821205FA /* DDLog+LOGV.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E498E0CD779955210A0A1ECA44DC694 /* DDLog+LOGV.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BE6665786223B5428866C62CA97EA3AE /* CLIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B19E5A40C2574C033188A83CED050D14 /* CLIColor.m */; };
-		C4061CF4C1E403C0F6F3FC8A994A4C42 /* CocoaLumberjack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F62A7D87521E65E02BBE8BF9ACBF1E /* CocoaLumberjack.swift */; };
-		C5710F84168236697676BDAC29B15227 /* ChromaColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FEBF7B3AFEE9F6469BFD43D22503E2 /* ChromaColorPicker.swift */; };
-		CF1A7526B86DBAA3C9ADFCBAED01BB71 /* CocoaLumberjack-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 74890DD2328C3898ECD6D418A9527334 /* CocoaLumberjack-dummy.m */; };
-		D0BD1654DD7AEE81F5F1AD782E61ABD7 /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A9F8158DD87A864A42779DC44CCA16 /* DDContextFilterLogFormatter.m */; };
-		D865950786FDC596321E957342A44D5E /* DDOSLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 26A98AFDA6BA4EC4EAC25691543204FB /* DDOSLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DA5628721FD25F42FD5BFB47B3950512 /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 8703E530105DB4A20F48D3A96EBA21EA /* DDFileLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DBA1DFA48782099673B506B6E5AC4E74 /* DDAssertMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 317FB72020E66EC87E99C89A40BDD445 /* DDAssertMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DDD98ED1E985962E44C0D8DB08C8DC52 /* UIColor+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB5932A1D6016A8F6B0A0C2DD48EC36 /* UIColor+Utilities.swift */; };
+		0AFB740C1102909E64B8B1C854C76C0F /* ChromaAddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EE039CF4ED67DB394050BB5C8E56ED /* ChromaAddButton.swift */; };
+		2846DF95EF5D23A428BBFB4BE58E86E7 /* ColorModeToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706AE19B1118F993C241580DFA846DF8 /* ColorModeToggleButton.swift */; };
+		31D89BB7BEF7F212A97011F76D7AE42C /* ChromaHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49876FADBDBC4E045AC1893B57D17439 /* ChromaHandle.swift */; };
+		3367285437A3DD3F31EFE9720D906A7E /* ChromaShadeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1A7A27234607D2425DFBAD40810DE8 /* ChromaShadeSlider.swift */; };
+		3B5C68A889447D559CC3F7DEB7991E14 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6612A64C574144F04CDC4C65F1FCD99F /* Filter.swift */; };
+		3D763AE749ECB64E4B0888A359EB50DA /* BaseDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = D095B7CC66F1574F4D5BBF3F5B9A03AC /* BaseDestination.swift */; };
+		435E69132E914A354CF82DFF9087E6B9 /* ConsoleDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE96C76BCD37A29122897EC194AFF02 /* ConsoleDestination.swift */; };
+		50C3DDDD2F6D4B0719D350ACFFE76741 /* ChromaColorPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AFCDE8ACACD636715D79875CC5B99F78 /* ChromaColorPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6407C7B87EB630480CBA6FB1ED08D9DE /* SwiftyBeaver-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B61100E8C9C7D0C60F959F7B46A63F66 /* SwiftyBeaver-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AA61F9700324174D0E6652E1F1E9529 /* Pods-MyNotes-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F789D93BBDD9445241AB53BB44A91AE /* Pods-MyNotes-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C6F69FF4FDF7BF9080B86786C244206 /* Pods-MyNotes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A564CDE13D1EC82E407BE4752557F7 /* Pods-MyNotes-dummy.m */; };
+		7EED7F749F7F44CDD431BB445729A16B /* SwiftyBeaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16813E0E1A671D7D74AC93988EC24C73 /* SwiftyBeaver.swift */; };
+		830AC211266A20EA05699D42F992688B /* AES256CBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DD19CF0F95A64D5F92707F392BFC9C /* AES256CBC.swift */; };
+		8B58FA7B31153C0891805D89B6855CDF /* SwiftyBeaver-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E29DF4B2515CF64912CE439ACD124FE8 /* SwiftyBeaver-dummy.m */; };
+		9683662E65F83C57CFC9BDEE7B859090 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		A3A003AA3B936AAEFB51BD42D5195861 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D971488279B8299B67FC8E8A9360BD /* Extensions.swift */; };
+		AAEBD696A35751830250E614C2BC998A /* ChromaColorPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 824FEA02124C9AE33DCCBAEE8B98A77D /* ChromaColorPicker-dummy.m */; };
+		AC35EB337233EA969EE7EF0490BA1D6C /* SBPlatformDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF6487638A86178AF517C09F061F20A /* SBPlatformDestination.swift */; };
+		B43A1AC4E7C15DCA37E1FDB6FC872C56 /* Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3487200F4CC15B3BBEF65047358A56D0 /* Base64.swift */; };
+		B4AA1BAFD15100E0803804047E0A5431 /* GoogleCloudDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F402FB1952CCC1FF4F3E99A1CBD7A4 /* GoogleCloudDestination.swift */; };
+		C5710F84168236697676BDAC29B15227 /* ChromaColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2E92207A762DB4195EFD8E482777D /* ChromaColorPicker.swift */; };
+		DDD98ED1E985962E44C0D8DB08C8DC52 /* UIColor+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABC74C865596B717D4E0E8D5C73D4DD /* UIColor+Utilities.swift */; };
 		DE4AFCD9ECF8B38632B8C161D25EFDBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		E19203C917B4E14C0E5D1527689F9B60 /* DDDispatchQueueLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 728252195770DD4E0FD53A04B332FC35 /* DDDispatchQueueLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE6A0367F4D6164F374FDDDB9F57EFFC /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 648536B4451DD23527ACACBC4403D2BF /* DDASLLogger.m */; };
-		EF2339BECB8570E0C55B68F2A7C5A81D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		F337238E4310A50BDBF50005C88220C0 /* DDLoggerNames.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ED7BC70BACE4E8BD8F49CC04974598C /* DDLoggerNames.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F51013C3D7AD87FBBBBA8AA9A4BE03EC /* DDMultiFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = B0672C0BA3C5E6B87E17AB1808D06D04 /* DDMultiFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F6949BF2A8CF492225A02F703377EA0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		F886F231E91FBAF02AE94D3EA58D84AD /* ChromaColorPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 774155423E17FB5F98AF788AE996326E /* ChromaColorPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FE744FCC324426ADC0BA21A902799C48 /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = EB200B85FA2DF6889F42C3D660E86AFE /* DDTTYLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E37912A056657E18FC98C058748C19A2 /* FileDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070F7D721B1EABDC644ABE5EB965F82 /* FileDestination.swift */; };
+		F886F231E91FBAF02AE94D3EA58D84AD /* ChromaColorPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = C4872A886456358C6B32F4FAB4E4D54D /* ChromaColorPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F98585731EF17261F4AD4BB281B07C64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C7D0F5204D5B04206F12F3AD71FB8B1D /* PBXContainerItemProxy */ = {
+		9A75EC3EB0B6A96ED318A5E30555E024 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E95654B155D25890BE8E26081FCA8265;
-			remoteInfo = CocoaLumberjack;
+			remoteGlobalIDString = 1740FECD5A74A42ADAE96F3A8246787A;
+			remoteInfo = SwiftyBeaver;
 		};
-		F61C31E42BADD60EE8DD0753BD34EDAC /* PBXContainerItemProxy */ = {
+		C2D059B4FD27F5A7DEF189B9BCFE5417 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -79,76 +54,67 @@
 
 /* Begin PBXFileReference section */
 		04A564CDE13D1EC82E407BE4752557F7 /* Pods-MyNotes-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyNotes-dummy.m"; sourceTree = "<group>"; };
-		05961343083AC02F8ADC882727D26788 /* ChromaAddButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChromaAddButton.swift; path = ChromaColorPicker/ChromaAddButton.swift; sourceTree = "<group>"; };
-		098A07F5E99D8BE0C42BD93C4B9560F0 /* DDLegacyMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLegacyMacros.h; path = Classes/DDLegacyMacros.h; sourceTree = "<group>"; };
-		12DD62B75D4AB721FF33647D2D96F3D9 /* ChromaColorPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChromaColorPicker-umbrella.h"; sourceTree = "<group>"; };
-		12EA11A7E4D68E40E1654719E272C7D2 /* DDLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLog.h; path = Classes/DDLog.h; sourceTree = "<group>"; };
-		1720D5BBF5E583F20D8B3F99071666DC /* DDMultiFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDMultiFormatter.m; path = Classes/Extensions/DDMultiFormatter.m; sourceTree = "<group>"; };
-		1C3F995CB00B5F70287325E26E6875DD /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDAbstractDatabaseLogger.m; path = Classes/DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
-		21E96523DB46A98D1F754D2386EE5A7E /* DDFileLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDFileLogger.m; path = Classes/DDFileLogger.m; sourceTree = "<group>"; };
+		0ABC74C865596B717D4E0E8D5C73D4DD /* UIColor+Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Utilities.swift"; path = "ChromaColorPicker/UIColor+Utilities.swift"; sourceTree = "<group>"; };
+		16813E0E1A671D7D74AC93988EC24C73 /* SwiftyBeaver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyBeaver.swift; path = Sources/SwiftyBeaver.swift; sourceTree = "<group>"; };
 		25B351040891E7BF7C089FEFD07B1E04 /* Pods-MyNotes-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyNotes-Info.plist"; sourceTree = "<group>"; };
-		26A98AFDA6BA4EC4EAC25691543204FB /* DDOSLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDOSLogger.h; path = Classes/DDOSLogger.h; sourceTree = "<group>"; };
-		28A9F8158DD87A864A42779DC44CCA16 /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDContextFilterLogFormatter.m; path = Classes/Extensions/DDContextFilterLogFormatter.m; sourceTree = "<group>"; };
-		2D341F14ECAB0B6B8428FB759C6AF7B8 /* ChromaColorPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ChromaColorPicker.modulemap; sourceTree = "<group>"; };
-		2D5E3CDE626DAF3B04032D39771B5110 /* CocoaLumberjack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CocoaLumberjack.h; path = Classes/CocoaLumberjack.h; sourceTree = "<group>"; };
-		2EFE545BAE79959086DFE35338D3CD36 /* CocoaLumberjack.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaLumberjack.xcconfig; sourceTree = "<group>"; };
-		317FB72020E66EC87E99C89A40BDD445 /* DDAssertMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAssertMacros.h; path = Classes/DDAssertMacros.h; sourceTree = "<group>"; };
-		31DB898C8533F58F8EE407BE3F7663E2 /* ColorModeToggleButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorModeToggleButton.swift; path = ChromaColorPicker/ColorModeToggleButton.swift; sourceTree = "<group>"; };
+		2A1A7A27234607D2425DFBAD40810DE8 /* ChromaShadeSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChromaShadeSlider.swift; path = ChromaColorPicker/ChromaShadeSlider.swift; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3427488BACFE0AF1343E66F94806BE9E /* ChromaColorPicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ChromaColorPicker-Info.plist"; sourceTree = "<group>"; };
+		3487200F4CC15B3BBEF65047358A56D0 /* Base64.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Base64.swift; path = Sources/Base64.swift; sourceTree = "<group>"; };
+		36B185223469D91CF4DB87D540A0D939 /* ChromaColorPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChromaColorPicker.xcconfig; sourceTree = "<group>"; };
 		38D00EF5F2B2F1D17130E05169ED60F0 /* Pods-MyNotes-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyNotes-frameworks.sh"; sourceTree = "<group>"; };
-		3BF39E647EE09AE082AE7AD388660EAD /* DDFileLogger+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DDFileLogger+Internal.h"; path = "Classes/DDFileLogger+Internal.h"; sourceTree = "<group>"; };
-		3D2AF863145CFB95F62A9A7FF0581F11 /* ChromaShadeSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChromaShadeSlider.swift; path = ChromaColorPicker/ChromaShadeSlider.swift; sourceTree = "<group>"; };
-		3E498E0CD779955210A0A1ECA44DC694 /* DDLog+LOGV.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DDLog+LOGV.h"; path = "Classes/DDLog+LOGV.h"; sourceTree = "<group>"; };
-		3ED7BC70BACE4E8BD8F49CC04974598C /* DDLoggerNames.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLoggerNames.h; path = Classes/DDLoggerNames.h; sourceTree = "<group>"; };
-		3F9E8B95D9C269DE8E8054D0204B12BB /* CocoaLumberjack.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CocoaLumberjack.modulemap; sourceTree = "<group>"; };
-		43EA4FA528AFF4BCF2FFA556CA4A12F4 /* DDFileLogger+Buffering.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "DDFileLogger+Buffering.m"; path = "Classes/Extensions/DDFileLogger+Buffering.m"; sourceTree = "<group>"; };
+		4536DBACE694349EF14FACA5FEBE4F7B /* ChromaColorPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ChromaColorPicker.modulemap; sourceTree = "<group>"; };
+		49876FADBDBC4E045AC1893B57D17439 /* ChromaHandle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChromaHandle.swift; path = ChromaColorPicker/ChromaHandle.swift; sourceTree = "<group>"; };
 		4A65F874F30AB5DF91ABD2419F65F8F0 /* Pods-MyNotes.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MyNotes.modulemap"; sourceTree = "<group>"; };
 		4F2A5DB6D4E40CBEF734B94AC5125F13 /* Pods_MyNotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MyNotes.framework; path = "Pods-MyNotes.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		507899D022D3FC471C4F85CEA8498CEE /* CLIColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLIColor.h; path = Classes/CLI/CLIColor.h; sourceTree = "<group>"; };
-		5149DF6DE10398415B2FCF4BF70370F3 /* DDLog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDLog.m; path = Classes/DDLog.m; sourceTree = "<group>"; };
-		565B5F15002778A9659834B936B2517A /* ChromaColorPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChromaColorPicker-prefix.pch"; sourceTree = "<group>"; };
-		57F62A7D87521E65E02BBE8BF9ACBF1E /* CocoaLumberjack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaLumberjack.swift; path = Classes/CocoaLumberjack.swift; sourceTree = "<group>"; };
+		53EE039CF4ED67DB394050BB5C8E56ED /* ChromaAddButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChromaAddButton.swift; path = ChromaColorPicker/ChromaAddButton.swift; sourceTree = "<group>"; };
 		5ED45DC61B6FCA7DDB0AF547D2832D3F /* Pods-MyNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyNotes.release.xcconfig"; sourceTree = "<group>"; };
-		648536B4451DD23527ACACBC4403D2BF /* DDASLLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogger.m; path = Classes/DDASLLogger.m; sourceTree = "<group>"; };
-		6EDD72A666C7045512C0D95AFD8665B1 /* DDASLLogCapture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogCapture.m; path = Classes/DDASLLogCapture.m; sourceTree = "<group>"; };
-		728252195770DD4E0FD53A04B332FC35 /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDDispatchQueueLogFormatter.h; path = Classes/Extensions/DDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
-		74890DD2328C3898ECD6D418A9527334 /* CocoaLumberjack-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaLumberjack-dummy.m"; sourceTree = "<group>"; };
-		76FEBF7B3AFEE9F6469BFD43D22503E2 /* ChromaColorPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChromaColorPicker.swift; path = ChromaColorPicker/ChromaColorPicker.swift; sourceTree = "<group>"; };
-		774155423E17FB5F98AF788AE996326E /* ChromaColorPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChromaColorPicker.h; path = ChromaColorPicker/ChromaColorPicker.h; sourceTree = "<group>"; };
+		6070F7D721B1EABDC644ABE5EB965F82 /* FileDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileDestination.swift; path = Sources/FileDestination.swift; sourceTree = "<group>"; };
+		65F402FB1952CCC1FF4F3E99A1CBD7A4 /* GoogleCloudDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GoogleCloudDestination.swift; path = Sources/GoogleCloudDestination.swift; sourceTree = "<group>"; };
+		6612A64C574144F04CDC4C65F1FCD99F /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/Filter.swift; sourceTree = "<group>"; };
+		706AE19B1118F993C241580DFA846DF8 /* ColorModeToggleButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorModeToggleButton.swift; path = ChromaColorPicker/ColorModeToggleButton.swift; sourceTree = "<group>"; };
+		75DD19CF0F95A64D5F92707F392BFC9C /* AES256CBC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AES256CBC.swift; path = Sources/AES256CBC.swift; sourceTree = "<group>"; };
+		75DF860CF1BDCC52FE17315144ADB709 /* ChromaColorPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChromaColorPicker-prefix.pch"; sourceTree = "<group>"; };
+		7A5F7001277980B8F3EEA75BCD346E53 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyBeaver.framework; path = SwiftyBeaver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BE96C76BCD37A29122897EC194AFF02 /* ConsoleDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConsoleDestination.swift; path = Sources/ConsoleDestination.swift; sourceTree = "<group>"; };
 		7F52AA86D345ECF69C007BBC06291946 /* Pods-MyNotes-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyNotes-acknowledgements.plist"; sourceTree = "<group>"; };
-		8703E530105DB4A20F48D3A96EBA21EA /* DDFileLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDFileLogger.h; path = Classes/DDFileLogger.h; sourceTree = "<group>"; };
-		8A14B63F24F133A7FFE783EF76FA9263 /* CocoaLumberjack-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaLumberjack-prefix.pch"; sourceTree = "<group>"; };
+		824FEA02124C9AE33DCCBAEE8B98A77D /* ChromaColorPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChromaColorPicker-dummy.m"; sourceTree = "<group>"; };
 		8F789D93BBDD9445241AB53BB44A91AE /* Pods-MyNotes-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyNotes-umbrella.h"; sourceTree = "<group>"; };
-		929513D6231F0FC998DC9F4E2757B838 /* DDLogMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLogMacros.h; path = Classes/DDLogMacros.h; sourceTree = "<group>"; };
-		97F594AD987115AE278A8730F9A0BE43 /* SwiftLogLevel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftLogLevel.h; path = Classes/SwiftLogLevel.h; sourceTree = "<group>"; };
-		9BB5932A1D6016A8F6B0A0C2DD48EC36 /* UIColor+Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Utilities.swift"; path = "ChromaColorPicker/UIColor+Utilities.swift"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A482FB113F0B998969057226BFD796AB /* CocoaLumberjack-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CocoaLumberjack-Info.plist"; sourceTree = "<group>"; };
-		A530A42BCADBAC444913637D28CF9A75 /* ChromaHandle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChromaHandle.swift; path = ChromaColorPicker/ChromaHandle.swift; sourceTree = "<group>"; };
-		A95BDF54025CF8ED45C6D7CF71B53DB1 /* DDOSLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDOSLogger.m; path = Classes/DDOSLogger.m; sourceTree = "<group>"; };
-		B0672C0BA3C5E6B87E17AB1808D06D04 /* DDMultiFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDMultiFormatter.h; path = Classes/Extensions/DDMultiFormatter.h; sourceTree = "<group>"; };
-		B19E5A40C2574C033188A83CED050D14 /* CLIColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLIColor.m; path = Classes/CLI/CLIColor.m; sourceTree = "<group>"; };
+		A1F2E92207A762DB4195EFD8E482777D /* ChromaColorPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChromaColorPicker.swift; path = ChromaColorPicker/ChromaColorPicker.swift; sourceTree = "<group>"; };
+		A436208E3CE9D0DBED642EE90A40BE88 /* ChromaColorPicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ChromaColorPicker-Info.plist"; sourceTree = "<group>"; };
+		AFCDE8ACACD636715D79875CC5B99F78 /* ChromaColorPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChromaColorPicker-umbrella.h"; sourceTree = "<group>"; };
 		B4056757F4C076DE6FAF098EBD03679C /* Pods-MyNotes-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyNotes-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B4DD92470B2FE5D2C88E58062AD97A72 /* DDLoggerNames.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDLoggerNames.m; path = Classes/DDLoggerNames.m; sourceTree = "<group>"; };
-		B7DE2ED9B066A4E22CDB14EF87320D29 /* ChromaColorPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChromaColorPicker-dummy.m"; sourceTree = "<group>"; };
-		C03C39D01159A1634AA00402CEE56B33 /* DDTTYLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDTTYLogger.m; path = Classes/DDTTYLogger.m; sourceTree = "<group>"; };
+		B61100E8C9C7D0C60F959F7B46A63F66 /* SwiftyBeaver-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyBeaver-umbrella.h"; sourceTree = "<group>"; };
+		B7D971488279B8299B67FC8E8A9360BD /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Sources/Extensions.swift; sourceTree = "<group>"; };
+		BEF18D7EA774AD30E42BBDCFE437CC7A /* SwiftyBeaver.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyBeaver.modulemap; sourceTree = "<group>"; };
 		C0963A089B0C138A23C580C7D13FC174 /* Pods-MyNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyNotes.debug.xcconfig"; sourceTree = "<group>"; };
-		C261436D14052AE3C35F240BCD155CAC /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaLumberjack.framework; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C42D535F8B7CF63FDC59E24483050014 /* DDContextFilterLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDContextFilterLogFormatter.h; path = Classes/Extensions/DDContextFilterLogFormatter.h; sourceTree = "<group>"; };
-		C5109F11AD92F058E8F39C156E011D98 /* ChromaColorPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChromaColorPicker.xcconfig; sourceTree = "<group>"; };
-		C78D7B881456675621B4787A9BD33B51 /* DDASLLogCapture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogCapture.h; path = Classes/DDASLLogCapture.h; sourceTree = "<group>"; };
-		C982AA975AA902570FAEEF11C52352BC /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAbstractDatabaseLogger.h; path = Classes/DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
-		CCD6A5618B37200811CB1EAE915E1BB4 /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDDispatchQueueLogFormatter.m; path = Classes/Extensions/DDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
-		D1DE108F27625AC47699E4E16F7F80E0 /* DDAssert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDAssert.swift; path = Classes/DDAssert.swift; sourceTree = "<group>"; };
+		C4872A886456358C6B32F4FAB4E4D54D /* ChromaColorPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChromaColorPicker.h; path = ChromaColorPicker/ChromaColorPicker.h; sourceTree = "<group>"; };
+		D095B7CC66F1574F4D5BBF3F5B9A03AC /* BaseDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseDestination.swift; path = Sources/BaseDestination.swift; sourceTree = "<group>"; };
 		D40FF0F11E7F2EF29D1A92D25FB2D60D /* ChromaColorPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ChromaColorPicker.framework; path = ChromaColorPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6357A06EDA18DA97D85F0F2AFF5B31F /* DDFileLogger+Buffering.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DDFileLogger+Buffering.h"; path = "Classes/Extensions/DDFileLogger+Buffering.h"; sourceTree = "<group>"; };
-		E846073D8CDF86530C882F815AFF4099 /* CocoaLumberjack-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaLumberjack-umbrella.h"; sourceTree = "<group>"; };
-		EB200B85FA2DF6889F42C3D660E86AFE /* DDTTYLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDTTYLogger.h; path = Classes/DDTTYLogger.h; sourceTree = "<group>"; };
-		F1E8A9FF6713D7A1F0EBB21817E86360 /* DDASLLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogger.h; path = Classes/DDASLLogger.h; sourceTree = "<group>"; };
+		DC183F46583343E76056083A350ED0C4 /* SwiftyBeaver-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyBeaver-prefix.pch"; sourceTree = "<group>"; };
+		DDB04E334F89EF6AD4ED860E432E69FE /* SwiftyBeaver.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyBeaver.xcconfig; sourceTree = "<group>"; };
+		E29DF4B2515CF64912CE439ACD124FE8 /* SwiftyBeaver-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyBeaver-dummy.m"; sourceTree = "<group>"; };
+		F0AB9157E79D06EF7B0BFA024F45F63D /* SwiftyBeaver-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyBeaver-Info.plist"; sourceTree = "<group>"; };
+		FEF6487638A86178AF517C09F061F20A /* SBPlatformDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SBPlatformDestination.swift; path = Sources/SBPlatformDestination.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0A65D2A87A2A718136F5534398BBB2A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F98585731EF17261F4AD4BB281B07C64 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21EC19975548B4744F7950D900822356 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9683662E65F83C57CFC9BDEE7B859090 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		64A72F2FBB544A5277FE4758C24CF3DE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -157,68 +123,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		753FAB172EA410BE04FC6470957CCD61 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EF2339BECB8570E0C55B68F2A7C5A81D /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C6F61ADF2C0842D7617E67EA6B2E4639 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F6949BF2A8CF492225A02F703377EA0D /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00B0254E5E3655594DD707F43C3887D3 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3F9E8B95D9C269DE8E8054D0204B12BB /* CocoaLumberjack.modulemap */,
-				2EFE545BAE79959086DFE35338D3CD36 /* CocoaLumberjack.xcconfig */,
-				74890DD2328C3898ECD6D418A9527334 /* CocoaLumberjack-dummy.m */,
-				A482FB113F0B998969057226BFD796AB /* CocoaLumberjack-Info.plist */,
-				8A14B63F24F133A7FFE783EF76FA9263 /* CocoaLumberjack-prefix.pch */,
-				E846073D8CDF86530C882F815AFF4099 /* CocoaLumberjack-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/CocoaLumberjack";
-			sourceTree = "<group>";
-		};
-		203ACFA2F602A4CB5A61D2490354A7AB /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D40FF0F11E7F2EF29D1A92D25FB2D60D /* ChromaColorPicker.framework */,
-				C261436D14052AE3C35F240BCD155CAC /* CocoaLumberjack.framework */,
-				4F2A5DB6D4E40CBEF734B94AC5125F13 /* Pods_MyNotes.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		2309F1529E36392A7B718C565092BCC3 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A6454BE3383E7A55116BB5823C3C928A /* ChromaColorPicker */,
-				89BD2D22250834FA3E8D5C01A84A5F42 /* CocoaLumberjack */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		3171DA2E141C6A87E3CC2527FA26008A /* Swift */ = {
-			isa = PBXGroup;
-			children = (
-				57F62A7D87521E65E02BBE8BF9ACBF1E /* CocoaLumberjack.swift */,
-				D1DE108F27625AC47699E4E16F7F80E0 /* DDAssert.swift */,
-				97F594AD987115AE278A8730F9A0BE43 /* SwiftLogLevel.h */,
-			);
-			name = Swift;
-			sourceTree = "<group>";
-		};
 		31E48833780FADEA0F5472A9D32A9D33 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,70 +151,56 @@
 			path = "Target Support Files/Pods-MyNotes";
 			sourceTree = "<group>";
 		};
-		7C2B45CEAB32DB3B936F6F63D07EDE2C /* Core */ = {
+		58FFA3A88A126634ECB86FE6ACF15E5A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				507899D022D3FC471C4F85CEA8498CEE /* CLIColor.h */,
-				B19E5A40C2574C033188A83CED050D14 /* CLIColor.m */,
-				2D5E3CDE626DAF3B04032D39771B5110 /* CocoaLumberjack.h */,
-				C982AA975AA902570FAEEF11C52352BC /* DDAbstractDatabaseLogger.h */,
-				1C3F995CB00B5F70287325E26E6875DD /* DDAbstractDatabaseLogger.m */,
-				C78D7B881456675621B4787A9BD33B51 /* DDASLLogCapture.h */,
-				6EDD72A666C7045512C0D95AFD8665B1 /* DDASLLogCapture.m */,
-				F1E8A9FF6713D7A1F0EBB21817E86360 /* DDASLLogger.h */,
-				648536B4451DD23527ACACBC4403D2BF /* DDASLLogger.m */,
-				317FB72020E66EC87E99C89A40BDD445 /* DDAssertMacros.h */,
-				C42D535F8B7CF63FDC59E24483050014 /* DDContextFilterLogFormatter.h */,
-				28A9F8158DD87A864A42779DC44CCA16 /* DDContextFilterLogFormatter.m */,
-				728252195770DD4E0FD53A04B332FC35 /* DDDispatchQueueLogFormatter.h */,
-				CCD6A5618B37200811CB1EAE915E1BB4 /* DDDispatchQueueLogFormatter.m */,
-				8703E530105DB4A20F48D3A96EBA21EA /* DDFileLogger.h */,
-				21E96523DB46A98D1F754D2386EE5A7E /* DDFileLogger.m */,
-				D6357A06EDA18DA97D85F0F2AFF5B31F /* DDFileLogger+Buffering.h */,
-				43EA4FA528AFF4BCF2FFA556CA4A12F4 /* DDFileLogger+Buffering.m */,
-				3BF39E647EE09AE082AE7AD388660EAD /* DDFileLogger+Internal.h */,
-				098A07F5E99D8BE0C42BD93C4B9560F0 /* DDLegacyMacros.h */,
-				12EA11A7E4D68E40E1654719E272C7D2 /* DDLog.h */,
-				5149DF6DE10398415B2FCF4BF70370F3 /* DDLog.m */,
-				3E498E0CD779955210A0A1ECA44DC694 /* DDLog+LOGV.h */,
-				3ED7BC70BACE4E8BD8F49CC04974598C /* DDLoggerNames.h */,
-				B4DD92470B2FE5D2C88E58062AD97A72 /* DDLoggerNames.m */,
-				929513D6231F0FC998DC9F4E2757B838 /* DDLogMacros.h */,
-				B0672C0BA3C5E6B87E17AB1808D06D04 /* DDMultiFormatter.h */,
-				1720D5BBF5E583F20D8B3F99071666DC /* DDMultiFormatter.m */,
-				26A98AFDA6BA4EC4EAC25691543204FB /* DDOSLogger.h */,
-				A95BDF54025CF8ED45C6D7CF71B53DB1 /* DDOSLogger.m */,
-				EB200B85FA2DF6889F42C3D660E86AFE /* DDTTYLogger.h */,
-				C03C39D01159A1634AA00402CEE56B33 /* DDTTYLogger.m */,
+				D40FF0F11E7F2EF29D1A92D25FB2D60D /* ChromaColorPicker.framework */,
+				4F2A5DB6D4E40CBEF734B94AC5125F13 /* Pods_MyNotes.framework */,
+				7A5F7001277980B8F3EEA75BCD346E53 /* SwiftyBeaver.framework */,
 			);
-			name = Core;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		89BD2D22250834FA3E8D5C01A84A5F42 /* CocoaLumberjack */ = {
+		657C15366E350966CF2AE6ECAF4B141F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7C2B45CEAB32DB3B936F6F63D07EDE2C /* Core */,
-				00B0254E5E3655594DD707F43C3887D3 /* Support Files */,
-				3171DA2E141C6A87E3CC2527FA26008A /* Swift */,
+				4536DBACE694349EF14FACA5FEBE4F7B /* ChromaColorPicker.modulemap */,
+				36B185223469D91CF4DB87D540A0D939 /* ChromaColorPicker.xcconfig */,
+				824FEA02124C9AE33DCCBAEE8B98A77D /* ChromaColorPicker-dummy.m */,
+				A436208E3CE9D0DBED642EE90A40BE88 /* ChromaColorPicker-Info.plist */,
+				75DF860CF1BDCC52FE17315144ADB709 /* ChromaColorPicker-prefix.pch */,
+				AFCDE8ACACD636715D79875CC5B99F78 /* ChromaColorPicker-umbrella.h */,
 			);
-			name = CocoaLumberjack;
-			path = CocoaLumberjack;
+			name = "Support Files";
+			path = "../Target Support Files/ChromaColorPicker";
 			sourceTree = "<group>";
 		};
-		A6454BE3383E7A55116BB5823C3C928A /* ChromaColorPicker */ = {
+		82B3A855272C2DF5354CA255F08DA150 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				05961343083AC02F8ADC882727D26788 /* ChromaAddButton.swift */,
-				774155423E17FB5F98AF788AE996326E /* ChromaColorPicker.h */,
-				76FEBF7B3AFEE9F6469BFD43D22503E2 /* ChromaColorPicker.swift */,
-				A530A42BCADBAC444913637D28CF9A75 /* ChromaHandle.swift */,
-				3D2AF863145CFB95F62A9A7FF0581F11 /* ChromaShadeSlider.swift */,
-				31DB898C8533F58F8EE407BE3F7663E2 /* ColorModeToggleButton.swift */,
-				9BB5932A1D6016A8F6B0A0C2DD48EC36 /* UIColor+Utilities.swift */,
-				EEAC173B82DB059776AB051A86236FD6 /* Support Files */,
+				C5BB585FB82E5C329A2DDDAC82E33973 /* ChromaColorPicker */,
+				90818B582B8AC224C671A14081B4BAF5 /* SwiftyBeaver */,
 			);
-			name = ChromaColorPicker;
-			path = ChromaColorPicker;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		90818B582B8AC224C671A14081B4BAF5 /* SwiftyBeaver */ = {
+			isa = PBXGroup;
+			children = (
+				75DD19CF0F95A64D5F92707F392BFC9C /* AES256CBC.swift */,
+				3487200F4CC15B3BBEF65047358A56D0 /* Base64.swift */,
+				D095B7CC66F1574F4D5BBF3F5B9A03AC /* BaseDestination.swift */,
+				7BE96C76BCD37A29122897EC194AFF02 /* ConsoleDestination.swift */,
+				B7D971488279B8299B67FC8E8A9360BD /* Extensions.swift */,
+				6070F7D721B1EABDC644ABE5EB965F82 /* FileDestination.swift */,
+				6612A64C574144F04CDC4C65F1FCD99F /* Filter.swift */,
+				65F402FB1952CCC1FF4F3E99A1CBD7A4 /* GoogleCloudDestination.swift */,
+				FEF6487638A86178AF517C09F061F20A /* SBPlatformDestination.swift */,
+				16813E0E1A671D7D74AC93988EC24C73 /* SwiftyBeaver.swift */,
+				F88112959930F6B49BE862185C60E663 /* Support Files */,
+			);
+			name = SwiftyBeaver;
+			path = SwiftyBeaver;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -318,13 +211,29 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		C5BB585FB82E5C329A2DDDAC82E33973 /* ChromaColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				53EE039CF4ED67DB394050BB5C8E56ED /* ChromaAddButton.swift */,
+				C4872A886456358C6B32F4FAB4E4D54D /* ChromaColorPicker.h */,
+				A1F2E92207A762DB4195EFD8E482777D /* ChromaColorPicker.swift */,
+				49876FADBDBC4E045AC1893B57D17439 /* ChromaHandle.swift */,
+				2A1A7A27234607D2425DFBAD40810DE8 /* ChromaShadeSlider.swift */,
+				706AE19B1118F993C241580DFA846DF8 /* ColorModeToggleButton.swift */,
+				0ABC74C865596B717D4E0E8D5C73D4DD /* UIColor+Utilities.swift */,
+				657C15366E350966CF2AE6ECAF4B141F /* Support Files */,
+			);
+			name = ChromaColorPicker;
+			path = ChromaColorPicker;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				2309F1529E36392A7B718C565092BCC3 /* Pods */,
-				203ACFA2F602A4CB5A61D2490354A7AB /* Products */,
+				82B3A855272C2DF5354CA255F08DA150 /* Pods */,
+				58FFA3A88A126634ECB86FE6ACF15E5A /* Products */,
 				31E48833780FADEA0F5472A9D32A9D33 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -337,56 +246,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EEAC173B82DB059776AB051A86236FD6 /* Support Files */ = {
+		F88112959930F6B49BE862185C60E663 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2D341F14ECAB0B6B8428FB759C6AF7B8 /* ChromaColorPicker.modulemap */,
-				C5109F11AD92F058E8F39C156E011D98 /* ChromaColorPicker.xcconfig */,
-				B7DE2ED9B066A4E22CDB14EF87320D29 /* ChromaColorPicker-dummy.m */,
-				3427488BACFE0AF1343E66F94806BE9E /* ChromaColorPicker-Info.plist */,
-				565B5F15002778A9659834B936B2517A /* ChromaColorPicker-prefix.pch */,
-				12DD62B75D4AB721FF33647D2D96F3D9 /* ChromaColorPicker-umbrella.h */,
+				BEF18D7EA774AD30E42BBDCFE437CC7A /* SwiftyBeaver.modulemap */,
+				DDB04E334F89EF6AD4ED860E432E69FE /* SwiftyBeaver.xcconfig */,
+				E29DF4B2515CF64912CE439ACD124FE8 /* SwiftyBeaver-dummy.m */,
+				F0AB9157E79D06EF7B0BFA024F45F63D /* SwiftyBeaver-Info.plist */,
+				DC183F46583343E76056083A350ED0C4 /* SwiftyBeaver-prefix.pch */,
+				B61100E8C9C7D0C60F959F7B46A63F66 /* SwiftyBeaver-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/ChromaColorPicker";
+			path = "../Target Support Files/SwiftyBeaver";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		527A3CD1C9784729C14C6753633675BC /* Headers */ = {
+		021FE0E78FBA93485336C1B7631CCC7E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67A4C4A5764636432DC4E24C259A0F7F /* CLIColor.h in Headers */,
-				4CAD49704680286622E12C021FB60917 /* CocoaLumberjack-umbrella.h in Headers */,
-				47771D4F38962FF6D770D8D36E43D021 /* CocoaLumberjack.h in Headers */,
-				A086395C3C4300488EF23AF3D67A9B10 /* DDAbstractDatabaseLogger.h in Headers */,
-				104F93F51E9874729C21655508F6D9D9 /* DDASLLogCapture.h in Headers */,
-				940C063BA63E04C26083CA576243D70E /* DDASLLogger.h in Headers */,
-				DBA1DFA48782099673B506B6E5AC4E74 /* DDAssertMacros.h in Headers */,
-				624EB5C2E3BAE9752E44A6D6ED63C61D /* DDContextFilterLogFormatter.h in Headers */,
-				E19203C917B4E14C0E5D1527689F9B60 /* DDDispatchQueueLogFormatter.h in Headers */,
-				A5E839070BC3DF5291BE4CC48FAB08E6 /* DDFileLogger+Buffering.h in Headers */,
-				7D9FD7963BD0891B07B86C1BA858930B /* DDFileLogger+Internal.h in Headers */,
-				DA5628721FD25F42FD5BFB47B3950512 /* DDFileLogger.h in Headers */,
-				4EAC3D69F4903411B1C8A52E8AFE90DD /* DDLegacyMacros.h in Headers */,
-				B25AFA2775DFEC1085D803C9821205FA /* DDLog+LOGV.h in Headers */,
-				571D67412D63E7B133DC365423BFC3F3 /* DDLog.h in Headers */,
-				F337238E4310A50BDBF50005C88220C0 /* DDLoggerNames.h in Headers */,
-				05CA23C43024A74D57C330814E1A8351 /* DDLogMacros.h in Headers */,
-				F51013C3D7AD87FBBBBA8AA9A4BE03EC /* DDMultiFormatter.h in Headers */,
-				D865950786FDC596321E957342A44D5E /* DDOSLogger.h in Headers */,
-				FE744FCC324426ADC0BA21A902799C48 /* DDTTYLogger.h in Headers */,
-				7BB947EA62030EB477712B705A7B446F /* SwiftLogLevel.h in Headers */,
+				6407C7B87EB630480CBA6FB1ED08D9DE /* SwiftyBeaver-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		81AD12DBEDD6F9609F430DDF19011283 /* Headers */ = {
+		75C2AC1674515AE75035D0B79883D14D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2E5B603E340518BE2213B1E7338F11F /* Pods-MyNotes-umbrella.h in Headers */,
+				6AA61F9700324174D0E6652E1F1E9529 /* Pods-MyNotes-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +291,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1740FECD5A74A42ADAE96F3A8246787A /* SwiftyBeaver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C51412FD0FF25D71B920C2CE9AA18DD /* Build configuration list for PBXNativeTarget "SwiftyBeaver" */;
+			buildPhases = (
+				021FE0E78FBA93485336C1B7631CCC7E /* Headers */,
+				3167C7BDCAEE60653DE7DDB5142CDAD9 /* Sources */,
+				0A65D2A87A2A718136F5534398BBB2A8 /* Frameworks */,
+				11B03B0F1B01190B7B69897AA860EE5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyBeaver;
+			productName = SwiftyBeaver;
+			productReference = 7A5F7001277980B8F3EEA75BCD346E53 /* SwiftyBeaver.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		7961A0F04FB3D96E3E703CF075D6DACD /* ChromaColorPicker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D0998ED110F68E4152C11B620DECEA4 /* Build configuration list for PBXNativeTarget "ChromaColorPicker" */;
@@ -422,40 +329,22 @@
 		};
 		9EA0129E9FD079CC8C3D6F3970ACFABA /* Pods-MyNotes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B33C27D35A0CE0E1B10CC6443991D1B7 /* Build configuration list for PBXNativeTarget "Pods-MyNotes" */;
+			buildConfigurationList = 36F12E6E73CFC735D6CFC7323941DCDF /* Build configuration list for PBXNativeTarget "Pods-MyNotes" */;
 			buildPhases = (
-				81AD12DBEDD6F9609F430DDF19011283 /* Headers */,
-				9647F0A6D33F1650A93AB9D68BA88B39 /* Sources */,
-				753FAB172EA410BE04FC6470957CCD61 /* Frameworks */,
-				C65B65ACCE1665FA0BA2F91E1DD406C3 /* Resources */,
+				75C2AC1674515AE75035D0B79883D14D /* Headers */,
+				876DB4CADE3BED629A2B79B6C2F263C2 /* Sources */,
+				21EC19975548B4744F7950D900822356 /* Frameworks */,
+				F53A25582AFFB4D421CF6B47CBB7FC99 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D0935E79A035E8081B3C217574F73118 /* PBXTargetDependency */,
-				93FC1D5A16DEE7945A2FB10DC6A737A0 /* PBXTargetDependency */,
+				38A2F589890151DCEAD988A4E5EF4E49 /* PBXTargetDependency */,
+				62761841507253708415BC3F81069988 /* PBXTargetDependency */,
 			);
 			name = "Pods-MyNotes";
 			productName = "Pods-MyNotes";
 			productReference = 4F2A5DB6D4E40CBEF734B94AC5125F13 /* Pods_MyNotes.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FE1656DF5D916841ABB86B9B166CBEEC /* Build configuration list for PBXNativeTarget "CocoaLumberjack" */;
-			buildPhases = (
-				527A3CD1C9784729C14C6753633675BC /* Headers */,
-				E85D5753D1D064F72FDC5BD1306CFEC9 /* Sources */,
-				C6F61ADF2C0842D7617E67EA6B2E4639 /* Frameworks */,
-				0A8F69AD0BDE81B314AAE7E7A7701D75 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CocoaLumberjack;
-			productName = CocoaLumberjack;
-			productReference = C261436D14052AE3C35F240BCD155CAC /* CocoaLumberjack.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -475,19 +364,19 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 203ACFA2F602A4CB5A61D2490354A7AB /* Products */;
+			productRefGroup = 58FFA3A88A126634ECB86FE6ACF15E5A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				7961A0F04FB3D96E3E703CF075D6DACD /* ChromaColorPicker */,
-				E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */,
 				9EA0129E9FD079CC8C3D6F3970ACFABA /* Pods-MyNotes */,
+				1740FECD5A74A42ADAE96F3A8246787A /* SwiftyBeaver */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0A8F69AD0BDE81B314AAE7E7A7701D75 /* Resources */ = {
+		11B03B0F1B01190B7B69897AA860EE5C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -501,7 +390,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C65B65ACCE1665FA0BA2F91E1DD406C3 /* Resources */ = {
+		F53A25582AFFB4D421CF6B47CBB7FC99 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -511,11 +400,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9647F0A6D33F1650A93AB9D68BA88B39 /* Sources */ = {
+		3167C7BDCAEE60653DE7DDB5142CDAD9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8950A6075465147B89F0332602FFD110 /* Pods-MyNotes-dummy.m in Sources */,
+				830AC211266A20EA05699D42F992688B /* AES256CBC.swift in Sources */,
+				B43A1AC4E7C15DCA37E1FDB6FC872C56 /* Base64.swift in Sources */,
+				3D763AE749ECB64E4B0888A359EB50DA /* BaseDestination.swift in Sources */,
+				435E69132E914A354CF82DFF9087E6B9 /* ConsoleDestination.swift in Sources */,
+				A3A003AA3B936AAEFB51BD42D5195861 /* Extensions.swift in Sources */,
+				E37912A056657E18FC98C058748C19A2 /* FileDestination.swift in Sources */,
+				3B5C68A889447D559CC3F7DEB7991E14 /* Filter.swift in Sources */,
+				B4AA1BAFD15100E0803804047E0A5431 /* GoogleCloudDestination.swift in Sources */,
+				AC35EB337233EA969EE7EF0490BA1D6C /* SBPlatformDestination.swift in Sources */,
+				8B58FA7B31153C0891805D89B6855CDF /* SwiftyBeaver-dummy.m in Sources */,
+				7EED7F749F7F44CDD431BB445729A16B /* SwiftyBeaver.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		876DB4CADE3BED629A2B79B6C2F263C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C6F69FF4FDF7BF9080B86786C244206 /* Pods-MyNotes-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,50 +440,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E85D5753D1D064F72FDC5BD1306CFEC9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BE6665786223B5428866C62CA97EA3AE /* CLIColor.m in Sources */,
-				CF1A7526B86DBAA3C9ADFCBAED01BB71 /* CocoaLumberjack-dummy.m in Sources */,
-				C4061CF4C1E403C0F6F3FC8A994A4C42 /* CocoaLumberjack.swift in Sources */,
-				158337C39C663083CC1858B14F443D05 /* DDAbstractDatabaseLogger.m in Sources */,
-				23F8AF0CCD6932BD129CCB61619ADB3D /* DDASLLogCapture.m in Sources */,
-				EE6A0367F4D6164F374FDDDB9F57EFFC /* DDASLLogger.m in Sources */,
-				83CC221B10D47B704195093BDC414867 /* DDAssert.swift in Sources */,
-				D0BD1654DD7AEE81F5F1AD782E61ABD7 /* DDContextFilterLogFormatter.m in Sources */,
-				6A705DACC676BCB94BAFB2979394CEA6 /* DDDispatchQueueLogFormatter.m in Sources */,
-				89141F0C37E88953C21B8A3A974ECBC7 /* DDFileLogger+Buffering.m in Sources */,
-				096CB0404EF464DC1E8D5F5F5B0A210E /* DDFileLogger.m in Sources */,
-				5A176CDB39E2631FAEE15AA7C55F4B17 /* DDLog.m in Sources */,
-				8A06D2CF5742FD2D42787EF27D59C98A /* DDLoggerNames.m in Sources */,
-				3F8D6E16E7F40A3AD3B208ED3BCD6F97 /* DDMultiFormatter.m in Sources */,
-				06FAABF17CA6C7CA051EEDC9C6725D2D /* DDOSLogger.m in Sources */,
-				25951A525FDB265713DACAF9184F4292 /* DDTTYLogger.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		93FC1D5A16DEE7945A2FB10DC6A737A0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CocoaLumberjack;
-			target = E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */;
-			targetProxy = C7D0F5204D5B04206F12F3AD71FB8B1D /* PBXContainerItemProxy */;
-		};
-		D0935E79A035E8081B3C217574F73118 /* PBXTargetDependency */ = {
+		38A2F589890151DCEAD988A4E5EF4E49 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ChromaColorPicker;
 			target = 7961A0F04FB3D96E3E703CF075D6DACD /* ChromaColorPicker */;
-			targetProxy = F61C31E42BADD60EE8DD0753BD34EDAC /* PBXContainerItemProxy */;
+			targetProxy = C2D059B4FD27F5A7DEF189B9BCFE5417 /* PBXContainerItemProxy */;
+		};
+		62761841507253708415BC3F81069988 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyBeaver;
+			target = 1740FECD5A74A42ADAE96F3A8246787A /* SwiftyBeaver */;
+			targetProxy = 9A75EC3EB0B6A96ED318A5E30555E024 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1EFD2421BB76CB0B9D816F2382E53B16 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C5109F11AD92F058E8F39C156E011D98 /* ChromaColorPicker.xcconfig */;
+			baseConfigurationReference = 36B185223469D91CF4DB87D540A0D939 /* ChromaColorPicker.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -673,9 +557,9 @@
 			};
 			name = Debug;
 		};
-		2879C08FED043C9A19F1A210012C779F /* Debug */ = {
+		3A45ACE54EA504A7B3B4789EBD95E70B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2EFE545BAE79959086DFE35338D3CD36 /* CocoaLumberjack.xcconfig */;
+			baseConfigurationReference = DDB04E334F89EF6AD4ED860E432E69FE /* SwiftyBeaver.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -686,8 +570,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CocoaLumberjack/CocoaLumberjack-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CocoaLumberjack/CocoaLumberjack-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyBeaver/SwiftyBeaver-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyBeaver/SwiftyBeaver-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -695,18 +579,19 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/CocoaLumberjack/CocoaLumberjack.modulemap";
-				PRODUCT_MODULE_NAME = CocoaLumberjack;
-				PRODUCT_NAME = CocoaLumberjack;
+				MODULEMAP_FILE = "Target Support Files/SwiftyBeaver/SwiftyBeaver.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyBeaver;
+				PRODUCT_NAME = SwiftyBeaver;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -768,81 +653,7 @@
 			};
 			name = Release;
 		};
-		482055EE9E9D8E64D6473E9946CD2DF8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0963A089B0C138A23C580C7D13FC174 /* Pods-MyNotes.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MyNotes/Pods-MyNotes-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MyNotes/Pods-MyNotes.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8C99418EB0A173E1814F0D69FA4C86C2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C5109F11AD92F058E8F39C156E011D98 /* ChromaColorPicker.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ChromaColorPicker/ChromaColorPicker-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ChromaColorPicker/ChromaColorPicker-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/ChromaColorPicker/ChromaColorPicker.modulemap";
-				PRODUCT_MODULE_NAME = ChromaColorPicker;
-				PRODUCT_NAME = ChromaColorPicker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B9AC578474B084B52AC0C0110070C378 /* Release */ = {
+		4059CADCD4859C9B2965B64E94A254CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5ED45DC61B6FCA7DDB0AF547D2832D3F /* Pods-MyNotes.release.xcconfig */;
 			buildSettings = {
@@ -881,9 +692,9 @@
 			};
 			name = Release;
 		};
-		E0B32101A71830776B1FEE2F3CF35027 /* Release */ = {
+		4C216628A91DB658D8DE8C8D09DC1A1A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2EFE545BAE79959086DFE35338D3CD36 /* CocoaLumberjack.xcconfig */;
+			baseConfigurationReference = DDB04E334F89EF6AD4ED860E432E69FE /* SwiftyBeaver.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -894,8 +705,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CocoaLumberjack/CocoaLumberjack-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CocoaLumberjack/CocoaLumberjack-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyBeaver/SwiftyBeaver-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyBeaver/SwiftyBeaver-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -903,9 +714,44 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/CocoaLumberjack/CocoaLumberjack.modulemap";
-				PRODUCT_MODULE_NAME = CocoaLumberjack;
-				PRODUCT_NAME = CocoaLumberjack;
+				MODULEMAP_FILE = "Target Support Files/SwiftyBeaver/SwiftyBeaver.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyBeaver;
+				PRODUCT_NAME = SwiftyBeaver;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8C99418EB0A173E1814F0D69FA4C86C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36B185223469D91CF4DB87D540A0D939 /* ChromaColorPicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ChromaColorPicker/ChromaColorPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ChromaColorPicker/ChromaColorPicker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ChromaColorPicker/ChromaColorPicker.modulemap";
+				PRODUCT_MODULE_NAME = ChromaColorPicker;
+				PRODUCT_NAME = ChromaColorPicker;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -916,6 +762,44 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		F78A7E83B78D88E7D87E2186F10E9356 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0963A089B0C138A23C580C7D13FC174 /* Pods-MyNotes.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MyNotes/Pods-MyNotes-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyNotes/Pods-MyNotes.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -929,6 +813,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		36F12E6E73CFC735D6CFC7323941DCDF /* Build configuration list for PBXNativeTarget "Pods-MyNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F78A7E83B78D88E7D87E2186F10E9356 /* Debug */,
+				4059CADCD4859C9B2965B64E94A254CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -938,20 +831,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B33C27D35A0CE0E1B10CC6443991D1B7 /* Build configuration list for PBXNativeTarget "Pods-MyNotes" */ = {
+		9C51412FD0FF25D71B920C2CE9AA18DD /* Build configuration list for PBXNativeTarget "SwiftyBeaver" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				482055EE9E9D8E64D6473E9946CD2DF8 /* Debug */,
-				B9AC578474B084B52AC0C0110070C378 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FE1656DF5D916841ABB86B9B166CBEEC /* Build configuration list for PBXNativeTarget "CocoaLumberjack" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2879C08FED043C9A19F1A210012C779F /* Debug */,
-				E0B32101A71830776B1FEE2F3CF35027 /* Release */,
+				4C216628A91DB658D8DE8C8D09DC1A1A /* Debug */,
+				3A45ACE54EA504A7B3B4789EBD95E70B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

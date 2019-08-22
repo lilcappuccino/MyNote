@@ -10,93 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Old Create Note View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="OldCreateNoteViewController" customModule="MyNotes" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5SL-An-m96">
-                                <rect key="frame" x="0.0" y="106" width="414" height="756"/>
-                                <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter your note" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LzI-8a-gLc">
-                                        <rect key="frame" x="20" y="0.0" width="374" height="128"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="128" id="LnJ-SD-1FS"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BaO-tC-8bG">
-                                        <rect key="frame" x="178.66666666666666" y="143" width="51" height="31"/>
-                                        <connections>
-                                            <action selector="onDatePickerSwitcherChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="IKR-uJ-pvF"/>
-                                        </connections>
-                                    </switch>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use Destroy Data " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHH-HE-ebW" userLabel="Use Destroy Data">
-                                        <rect key="frame" x="20" y="148" width="138.66666666666666" height="20.666666666666657"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="qYf-IV-7fa">
-                                        <rect key="frame" x="0.0" y="194" width="414" height="216"/>
-                                        <date key="date" timeIntervalSinceReferenceDate="585657658.42460001">
-                                            <!--2019-07-24 10:40:58 +0000-->
-                                        </date>
-                                    </datePicker>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pEZ-mh-TbC" customClass="ColorStackUIView" customModule="MyNotes" customModuleProvider="target">
-                                        <rect key="frame" x="164" y="65" width="240" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="EHH-HE-ebW" firstAttribute="leading" secondItem="5SL-An-m96" secondAttribute="leading" constant="20" symbolic="YES" id="0lM-1G-zPg"/>
-                                    <constraint firstItem="qYf-IV-7fa" firstAttribute="leading" secondItem="5SL-An-m96" secondAttribute="leading" id="73S-PS-zEZ"/>
-                                    <constraint firstAttribute="bottom" secondItem="LzI-8a-gLc" secondAttribute="bottom" constant="628" id="Cgk-Bb-7OD"/>
-                                    <constraint firstAttribute="trailing" secondItem="qYf-IV-7fa" secondAttribute="trailing" id="K9a-xW-Wlt"/>
-                                    <constraint firstItem="BaO-tC-8bG" firstAttribute="centerY" secondItem="EHH-HE-ebW" secondAttribute="centerY" id="Mix-i1-OsW"/>
-                                    <constraint firstItem="qYf-IV-7fa" firstAttribute="top" secondItem="BaO-tC-8bG" secondAttribute="bottom" constant="20" id="OvT-h6-9OH"/>
-                                    <constraint firstAttribute="trailing" secondItem="LzI-8a-gLc" secondAttribute="trailing" constant="20" symbolic="YES" id="Zrr-hJ-DD3"/>
-                                    <constraint firstItem="LzI-8a-gLc" firstAttribute="top" secondItem="5SL-An-m96" secondAttribute="top" id="bAo-Ru-qA3"/>
-                                    <constraint firstItem="BaO-tC-8bG" firstAttribute="leading" secondItem="EHH-HE-ebW" secondAttribute="trailing" constant="20" id="bDl-VY-9zU"/>
-                                    <constraint firstItem="LzI-8a-gLc" firstAttribute="centerX" secondItem="5SL-An-m96" secondAttribute="centerX" id="cTa-WN-8yH"/>
-                                    <constraint firstItem="EHH-HE-ebW" firstAttribute="top" secondItem="LzI-8a-gLc" secondAttribute="bottom" constant="20" id="nxh-09-HtN"/>
-                                    <constraint firstItem="LzI-8a-gLc" firstAttribute="leading" secondItem="5SL-An-m96" secondAttribute="leading" constant="20" symbolic="YES" id="xYY-nc-wI2"/>
-                                </constraints>
-                            </scrollView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="StM-mz-ejd">
-                                <rect key="frame" x="16" y="60" width="382" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="StM-mz-ejd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="0bj-Wa-RSQ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="StM-mz-ejd" secondAttribute="trailing" constant="16" id="H7p-io-SAj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5SL-An-m96" secondAttribute="bottom" id="I5g-3E-JHV"/>
-                            <constraint firstItem="StM-mz-ejd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="KzC-Rc-7Uu"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5SL-An-m96" secondAttribute="trailing" id="XwJ-ha-DMb"/>
-                            <constraint firstItem="5SL-An-m96" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bNV-Eg-r1Z"/>
-                            <constraint firstItem="5SL-An-m96" firstAttribute="top" secondItem="StM-mz-ejd" secondAttribute="bottom" constant="16" id="pVk-Nb-6Si"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                    <connections>
-                        <outlet property="destroyDatePicker" destination="qYf-IV-7fa" id="ZZl-SV-A8M"/>
-                        <outlet property="destroyDateSwitcher" destination="BaO-tC-8bG" id="LZZ-RG-TeB"/>
-                        <outlet property="inputtingContentTextView" destination="LzI-8a-gLc" id="2he-Gd-Qik"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1628" y="219"/>
-        </scene>
         <!--Gallery-->
         <scene sceneID="BLJ-WH-ic0">
             <objects>
@@ -254,7 +167,6 @@
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="q9m-It-yf7">
                                         <rect key="frame" x="182.66666666666666" y="118" width="51" height="31"/>
                                         <connections>
-                                            <action selector="onDatePickerSwitcherChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="BQR-Wm-5qE"/>
                                             <action selector="switchDestroyNoteDate:" destination="hhp-Fd-vsQ" eventType="valueChanged" id="naZ-Bq-PpM"/>
                                         </connections>
                                     </switch>
