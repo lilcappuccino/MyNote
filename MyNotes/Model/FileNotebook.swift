@@ -9,8 +9,9 @@
 import Foundation
 
 class FileNotebook{
+    let TAG = "FileNotebook"
     
-    static let get = FileNotebook()
+    static let shared = FileNotebook()
     
     private init(){}
     
@@ -40,7 +41,7 @@ class FileNotebook{
                 let pathSave = path.appendingPathComponent("notebook.json")
                 FileManager.default.createFile(atPath: pathSave.path, contents: data, attributes: nil)
             } catch let error {
-                print("Can't save notes to file: \(error.localizedDescription)")
+                CustomLog.error(tag: TAG, message: "Can't save notes to file: \(error.localizedDescription)")
             }
         
     }

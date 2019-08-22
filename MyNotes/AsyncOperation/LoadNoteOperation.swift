@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import CoreData
+
 class LoadNoteOperation: AsyncOperation {
     private let notebook: FileNotebook
     private let loadFromDb: LoadNoteDBOperation
@@ -17,10 +19,10 @@ class LoadNoteOperation: AsyncOperation {
     
     init(notebook: FileNotebook,
          backendQueue: OperationQueue,
-         dbQueue: OperationQueue) {
+         dbQueue: OperationQueue, backgroundContext: NSManagedObjectContext) {
         self.notebook = notebook
         
-        loadFromDb = LoadNoteDBOperation(notebook: notebook)
+        loadFromDb = LoadNoteDBOperation(notebook: notebook, backgroundContext: backgroundContext)
         loadFromBackend = LoadNotesBackendOperation()
         
         super.init()
@@ -36,17 +38,18 @@ class LoadNoteOperation: AsyncOperation {
     //MARK -> Loading from backend ; if result == failure , then from bd
     override func main() {
           print(" LoadNoteOperation \(Thread.current)")
-        switch loadFromBackend.result! {
-        case .success: getNoteFromBackend()
+        guard let backendResult = loadFromBackend.result else { result = false;  notes = loadFromDb.noteList;  return  }
+        switch backendResult {
+        case .success (let notes): getNoteFromBackend(notes)
         case .failure:
             result = false;  notes = loadFromDb.noteList
         }
         finish()
     }
     
-    private func getNoteFromBackend(){
+    private func getNoteFromBackend(_ backendNotes: [Note]?){
         result = true
-        if let notesFromBackend = loadFromBackend.notes {
+        if let notesFromBackend = backendNotes {
             notes = notesFromBackend
             notebook.replace(to: notesFromBackend)
         }

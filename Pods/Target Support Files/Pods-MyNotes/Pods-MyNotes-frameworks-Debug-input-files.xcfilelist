@@ -1,3 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-MyNotes/Pods-MyNotes-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/ChromaColorPicker/ChromaColorPicker.framework
-${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework
+${BUILT_PRODUCTS_DIR}/SwiftyBeaver/SwiftyBeaver.framework
